@@ -1,0 +1,20 @@
+collections:
+  projects:
+    output: true
+    permalink: /:collection/:name
+    order:
+      - wedding.md
+      - blacafe.md
+  jobs:
+
+
+defaults:
+  - scope:
+      path: ""
+      type: "projects"
+    values:
+      layout: "project"
+  - scope:
+      path: ""
+    values:
+      layout: "default"

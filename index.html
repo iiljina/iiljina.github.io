@@ -1,0 +1,45 @@
+---
+layout: default
+title: Home
+---
+
+<h1>{{ "Hello World!" }}</h1>
+
+<hr/>
+
+<h2>Projects</h2>
+{% for project in site.projects %}
+<h2>
+    <a href="{{ project.url }}">
+        {{ project.name }} - {{ project.gist }}
+    </a>
+</h2>
+<p>{{ project.content | markdownify }}</p>
+{% endfor %}
+
+<hr/>
+
+<h2>Jobs</h2>
+{% for job in site.jobs %}
+<h2>
+    {{ job.name }} - {{ job.gist }}
+</h2>
+<p>{{ job.content | markdownify }}</p>
+{% endfor %}
+
+<hr/>
+
+<h2>Countries</h2>
+{% for country_hash in site.data.countries %}
+{% assign country = country_hash[1] %}
+<p>
+    {{ country.name }} - {{ country.description }}
+</p>
+{% endfor %}
+
+<h3>Just NL:</h3>
+{% assign nl = site.data.countries["NL"] %}
+{{ nl.name }}
+{{ nl.description }}
+
+
