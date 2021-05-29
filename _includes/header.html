@@ -1,14 +1,16 @@
 <section id="header">
     <header>
         <span class="image avatar"><img src="/images/avatar.jpg" alt=""/></span>
-        <h1 id="logo"><a href="#">Willis Corto</a></h1>
-        <p>I got reprogrammed by a rogue AI<br/>
-            and now I'm totally cray</p>
+        <h1 id="logo"><a href="#">{{ site.data.me.name }} {{ site.data.me.lastname }}</a></h1>
+        <p>{{ site.data.me.motto }}</p>
     </header>
     <nav id="nav">
         <ul>
-            {% for item in site.data.navigation %}
+            {% for item_hash in site.data.navigation %}
+            {% assign item = item_hash[1] %}
+            {% if item.sidebar %}
             <li><a href="{{ item.link }}">{{ item.name }}</a></li>
+            {% endif %}
             {% endfor %}
         </ul>
     </nav>

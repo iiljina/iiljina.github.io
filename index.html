@@ -3,4 +3,72 @@ layout: default
 title: Main page
 ---
 
+<section id="hero">
+    <div class="image main" data-position="center">
+        <img src="/images/banner.jpg" alt=""/>
+    </div>
+    <div class="container">
+        <header>
+            <h2>Hello!</h2>
+            <p>I am happy you came to learn mor about the events I organised, proposals developed,
+                my experiences, skills, hobbies, and testimonials.</p>
+        </header>
+        <p>Inna Iljina, Events Enthusiast</p>
+    </div>
+</section>
 
+
+<!-- Three -->
+<section id="three">
+    <div class="container">
+        <h3>Events & Projects</h3>
+        <p>
+            I put all my heart and efforts into every event or (study) project, I am fully committed to delivering the
+            best result.
+            I enjoy developing an overarching exciting event theme or concept, where every details complements the
+            theme.
+            I align every details to the big picture and the event's goals.
+        </p>
+
+        <div class="features">
+            {% for project in site.projects %}
+            <article>
+                <a href="#" class="image"><img src="/images/pic01.jpg" alt=""/></a>
+                <div class="inner">
+                    <h4>{{ project.name }}</h4>
+                    <p>{{ project.gist }}</p>
+                </div>
+            </article>
+            {% endfor %}
+        </div>
+    </div>
+</section>
+
+
+<section id="testimonials">
+    <div class="container">
+        <h3>Feedback & Testimonials</h3>
+
+        <p>
+            Some intro text maybe?
+        </p>
+
+        {% for item_hash in site.data.testimonials %}
+        {% assign testimonial_type = item_hash[1] %}
+        {% for testimonial in testimonial_type.list %}
+        <div class="row">
+            <blockquote>
+                <p>{{ testimonial.text }}</p>
+                <div class="sender">
+                    <span class="send-right button alt small icon solid {{ testimonial_type.icon }}">More from {{ testimonial_type.type }}</span>
+                </div>
+                <em>
+                    {{ testimonial.who }} <br>
+                    {{ testimonial.where }}
+                </em>
+            </blockquote>
+        </div>
+        {% endfor %}
+        {% endfor %}
+    </div>
+</section>

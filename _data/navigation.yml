@@ -1,10 +1,24 @@
-- name: Events & Projects
+hero:
+  name: Hero
+  sidebar: false
+  link: '#hero'
+events:
+  name: Events & Projects
+  sidebar: true
   link: '#events-and-projects'
-- name: Other experience
+other:
+  name: Other experience
+  sidebar: true
   link: '#other-experience'
-- name: Timeline
+timeline:
+  name: Timeline
+  sidebar: true
   link: '#timeline'
-- name: Skills
+skills:
+  name: Skills
+  sidebar: true
   link: '#skills'
-- name: More
+more:
+  name: More
+  sidebar: true
   link: '#more'

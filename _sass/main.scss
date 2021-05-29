@@ -257,6 +257,19 @@
 		text-align: right;
 	}
 
+	div.sender {
+	    position: relative;
+
+	    .send-left {
+	        left: 0;
+	        position: absolute;
+	    }
+	    .send-right {
+            right: 0;
+            position: absolute;
+        }
+	}
+
 /* Row */
 
 	.row {
@@ -1047,6 +1060,7 @@
 
 		&.icon {
 			padding-left: 1.35em;
+			padding-right: 1.35em;
 
 			&:before {
 				margin-right: 0.5em;
