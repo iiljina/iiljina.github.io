@@ -1,4 +1,10 @@
-- name: Home
-  link: /
-- name: About
-  link: /about
+- name: Events & Projects
+  link: '#events-and-projects'
+- name: Other experience
+  link: '#other-experience'
+- name: Timeline
+  link: '#timeline'
+- name: Skills
+  link: '#skills'
+- name: More
+  link: '#more'
