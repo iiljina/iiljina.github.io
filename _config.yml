@@ -2,9 +2,6 @@ collections:
   projects:
     output: true
     permalink: /:collection/:name
-    order:
-      - wedding.md
-      - blacafe.md
   jobs:
 
 

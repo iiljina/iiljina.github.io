@@ -1,19 +1,35 @@
-<!doctype html>
+<!DOCTYPE HTML>
 <html>
 <head>
-    <meta charset="utf-8">
-    <title>{{ page.title }}</title>
-    <link rel="stylesheet" href="/assets/css/styles.css">
+    <title>Read Only by HTML5 UP</title>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no"/>
+    <link rel="stylesheet" href="/assets/css/styles.css"/>
 </head>
-<body>
+<body class="is-preload">
+
 {% include header.html %}
 
-<hr/>
+<div id="wrapper">
 
-{{ content }}
+    <div id="main">
 
-<hr/>
+        {{ content }}
 
-{% include footer.html %}
+        {% include copyright.html %}
+
+    </div>
+
+</div>
+
+<!-- Scripts -->
+<script src="/assets/js/jquery.min.js"></script>
+<script src="/assets/js/jquery.scrollex.min.js"></script>
+<script src="/assets/js/jquery.scrolly.min.js"></script>
+<script src="/assets/js/browser.min.js"></script>
+<script src="/assets/js/breakpoints.min.js"></script>
+<script src="/assets/js/util.js"></script>
+<script src="/assets/js/main.js"></script>
+
 </body>
 </html>
