@@ -1,0 +1,22 @@
+name: Inna
+lastname: Iljina
+role: Events Enthusiast
+motto: Immersive experiences that amaze, inspire and unite.
+
+pages:
+  main:
+    hero:
+      title: Hello!
+      intro: >-
+        I am happy you came to learn mor about the events I organised, proposals developed, my experiences, skills, hobbies, and testimonials.
+
+    projects:
+      title: Events & Projects
+      intro: >-
+        I put all my heart and efforts into every event or (study) project, I am fully committed to delivering the best result.
+        I enjoy developing an overarching exciting event theme or concept, where every details complements the theme. I align every details to the big picture and the event's goals.
+
+    testimonials:
+      title: Feedback & Testimonials
+      intro: >-
+        Some intro?

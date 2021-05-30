@@ -9,11 +9,10 @@ title: Main page
     </div>
     <div class="container">
         <header>
-            <h2>Hello!</h2>
-            <p>I am happy you came to learn mor about the events I organised, proposals developed,
-                my experiences, skills, hobbies, and testimonials.</p>
+            <h2>{{ site.data.main.pages.main.hero.title }}</h2>
+            <p>{{ site.data.main.pages.main.hero.intro }}</p>
         </header>
-        <p>Inna Iljina, Events Enthusiast</p>
+        <p>{{ site.data.main.name }} {{ site.data.main.lastname }}, {{ site.data.main.role }}</p>
     </div>
 </section>
 
@@ -21,14 +20,8 @@ title: Main page
 <!-- Three -->
 <section id="three">
     <div class="container">
-        <h3>Events & Projects</h3>
-        <p>
-            I put all my heart and efforts into every event or (study) project, I am fully committed to delivering the
-            best result.
-            I enjoy developing an overarching exciting event theme or concept, where every details complements the
-            theme.
-            I align every details to the big picture and the event's goals.
-        </p>
+        <h3>{{ site.data.main.pages.main.projects.title }}</h3>
+        <p>{{ site.data.main.pages.main.projects.intro }}</p>
 
         <div class="features">
             {% for project in site.projects %}
@@ -47,11 +40,9 @@ title: Main page
 
 <section id="testimonials">
     <div class="container">
-        <h3>Feedback & Testimonials</h3>
+        <h3>{{ site.data.main.pages.main.testimonials.title }}</h3>
 
-        <p>
-            Some intro text maybe?
-        </p>
+        <p>{{ site.data.main.pages.main.testimonials.intro }}</p>
 
         {% for item_hash in site.data.testimonials %}
         {% assign testimonial_type = item_hash[1] %}
