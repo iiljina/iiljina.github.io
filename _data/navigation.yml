@@ -1,7 +1,3 @@
-hero:
-  name: Hero
-  sidebar: false
-  link: '#hero'
 events:
   name: Events & Projects
   sidebar: true

@@ -1,48 +1,35 @@
 ---
-layout: default
-title: Main page
+title: Hello!
+image: /images/banner.jpg
+gist: I am happy you came to learn mor about the events I organised, proposals developed, my experiences, skills, hobbies, and testimonials.
 ---
-
-<section id="hero">
-    <div class="image main" data-position="center">
-        <img src="/images/banner.jpg" alt=""/>
-    </div>
-    <div class="container">
-        <header>
-            <h2>{{ site.data.main.pages.main.hero.title }}</h2>
-            <p>{{ site.data.main.pages.main.hero.intro }}</p>
-        </header>
-        <p>{{ site.data.main.name }} {{ site.data.main.lastname }}, {{ site.data.main.role }}</p>
-    </div>
-</section>
-
-
 <!-- Three -->
 <section id="three">
     <div class="container">
-        <h3>{{ site.data.main.pages.main.projects.title }}</h3>
-        <p>{{ site.data.main.pages.main.projects.intro }}</p>
+        <h3>{{ site.data.pages.main.projects.title }}</h3>
+        <p>{{ site.data.pages.main.projects.gist }}</p>
 
         <div class="features">
             {% for project in site.projects %}
             <article>
-                <a href="#" class="image"><img src="/images/pic01.jpg" alt=""/></a>
+                <a href="{{ project.url }}" class="image"><img src="{{ project.image }}" alt="{{ project.title }}"/></a>
                 <div class="inner">
-                    <h4>{{ project.name }}</h4>
+                    <h4>{{ project.title }}</h4>
                     <p>{{ project.gist }}</p>
                 </div>
             </article>
             {% endfor %}
         </div>
+        <span class="button primary small icon solid {{ testimonial_type.icon }}">See all {{ site.data.pages.main.projects.title | downcase }}</span>
     </div>
 </section>
 
 
 <section id="testimonials">
     <div class="container">
-        <h3>{{ site.data.main.pages.main.testimonials.title }}</h3>
+        <h3>{{ site.data.pages.main.testimonials.title }}</h3>
 
-        <p>{{ site.data.main.pages.main.testimonials.intro }}</p>
+        <p>{{ site.data.pages.main.testimonials.gist }}</p>
 
         {% for item_hash in site.data.testimonials %}
         {% assign testimonial_type = item_hash[1] %}

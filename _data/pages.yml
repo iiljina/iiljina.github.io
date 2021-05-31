@@ -1,0 +1,14 @@
+main:
+  #    hello:
+  #    Everything for this specific section is defined in /index.html, at the top.
+
+  projects:
+    title: Events & Projects
+    gist: >-
+      I put all my heart and efforts into every event or (study) project, I am fully committed to delivering the best result.
+      I enjoy developing an overarching exciting event theme or concept, where every details complements the theme. I align every details to the big picture and the event's goals.
+
+  testimonials:
+    title: Feedback & Testimonials
+    gist: >-
+      Some intro text?
