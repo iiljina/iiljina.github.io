@@ -273,26 +273,26 @@
 /* Row */
 
 	.row {
-		@include html-grid(2em);
+		@include html-grid(1.5em);
 
 		@include breakpoint('<=xlarge') {
-			@include html-grid(2em, 'xlarge');
+			@include html-grid(1.25em, 'xlarge');
 		}
 
 		@include breakpoint('<=large') {
-			@include html-grid(1.5em, 'large');
+			@include html-grid(1.25em, 'large');
 		}
 
 		@include breakpoint('<=medium') {
-			@include html-grid(1.5em, 'medium');
+			@include html-grid(1.25em, 'medium');
 		}
 
 		@include breakpoint('<=small') {
-			@include html-grid(1.25em, 'small');
+			@include html-grid(1em, 'small');
 		}
 
 		@include breakpoint('<=xsmall') {
-			@include html-grid(1.25em, 'xsmall');
+			@include html-grid(1em, 'xsmall');
 		}
 	}
 
