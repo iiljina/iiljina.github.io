@@ -1,0 +1,20 @@
+---
+title: Projects
+image: /images/banner.jpg
+gist: List of all projects, check it out
+---
+<section id="projects">
+    <div class="container">
+        <div class="features">
+            {% for project in site.projects %}
+            <article>
+                <a href="{{ project.url }}" class="image"><img src="{{ project.image }}" alt="{{ project.title }}"/></a>
+                <div class="inner">
+                    <h4>{{ project.title }}</h4>
+                    <p>{{ project.gist }}</p>
+                </div>
+            </article>
+            {% endfor %}
+        </div>
+    </div>
+</section>

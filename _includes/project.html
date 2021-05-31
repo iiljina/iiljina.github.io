@@ -1,0 +1,18 @@
+{% for row in page.rows %}
+<section>
+    <div class="container">
+        <div class="row">
+            {% for col in row.columns %}
+            <div class="col-{{ col.size }}">
+                {% if col.image" %}
+                <span class="image fit"><img src="/images/projects/{{ col.image }}"/></span>
+                {% endif %}
+                {% if col.text" %}
+                <p>{{ col.text }}</p>
+                {% endif %}
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</section>
+{% endfor %}

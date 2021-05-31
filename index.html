@@ -6,11 +6,13 @@ gist: I am happy you came to learn mor about the events I organised, proposals d
 <!-- Three -->
 <section id="three">
     <div class="container">
-        <h3>{{ site.data.pages.main.projects.title }}</h3>
-        <p>{{ site.data.pages.main.projects.gist }}</p>
+        {% assign projects_page = site.data.pages.main.projects %}
+
+        <h3>{{ projects_page.title }}</h3>
+        <p>{{ projects_page.gist }}</p>
 
         <div class="features">
-            {% for project in site.projects %}
+            {% for project in site.projects limit:3 %}
             <article>
                 <a href="{{ project.url }}" class="image"><img src="{{ project.image }}" alt="{{ project.title }}"/></a>
                 <div class="inner">
@@ -20,25 +22,30 @@ gist: I am happy you came to learn mor about the events I organised, proposals d
             </article>
             {% endfor %}
         </div>
-        <span class="button primary small icon solid {{ testimonial_type.icon }}">See all {{ site.data.pages.main.projects.title | downcase }}</span>
+
+        <a href="{{ projects_page.url }}" class="button primary small icon solid">
+            See all {{ projects_page.title | downcase }}</a>
     </div>
 </section>
 
 
 <section id="testimonials">
     <div class="container">
-        <h3>{{ site.data.pages.main.testimonials.title }}</h3>
+        {% assign testimonials_page = site.data.pages.main.testimonials %}
 
-        <p>{{ site.data.pages.main.testimonials.gist }}</p>
+        <h3>{{ testimonials_page.title }}</h3>
+        <p>{{ testimonials_page.gist }}</p>
 
         {% for item_hash in site.data.testimonials %}
         {% assign testimonial_type = item_hash[1] %}
-        {% for testimonial in testimonial_type.list %}
+        {% assign testimonial = testimonial_type.list | sample %}
         <div class="row">
             <blockquote>
                 <p>{{ testimonial.text }}</p>
                 <div class="sender">
-                    <span class="send-right button alt small icon solid {{ testimonial_type.icon }}">More from {{ testimonial_type.type }}</span>
+                    <a href="{{ testimonials_page.url }}#{{ testimonial_type.type | slugify }}"
+                       class="send-right button alt small icon solid {{ testimonial_type.icon }}">
+                        More from {{ testimonial_type.type }}</a>
                 </div>
                 <em>
                     {{ testimonial.who }} <br>
@@ -46,7 +53,6 @@ gist: I am happy you came to learn mor about the events I organised, proposals d
                 </em>
             </blockquote>
         </div>
-        {% endfor %}
         {% endfor %}
     </div>
 </section>
