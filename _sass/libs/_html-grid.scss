@@ -113,6 +113,33 @@
 							}
 						}
 
+// 						custom names
+                        > .one-quarter {
+                            max-width: $unit * $cols / 4;
+                        }
+
+                        > .three-quarters {
+                            max-width: $unit * $cols * 3 / 4;
+                        }
+
+                        > .one-third {
+                            max-width: $unit * $cols / 3;
+                        }
+
+                        > .two-thirds {
+                            max-width: $unit * $cols * 2 / 3;
+                        }
+
+                        > .half {
+                            max-width: $unit * $cols / 2;
+                        }
+
+                        > .full {
+                            max-width: $unit * $cols;
+                        }
+// 						custom names
+
+
 					// Step through multipliers.
 						@each $multiplier in $multipliers {
 

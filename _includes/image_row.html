@@ -1,0 +1,26 @@
+<div style="clear: both;"></div>
+<div class="box alt">
+    <div class="row">
+        {% if include.image1 %}
+        <div class="{{ include.size1 }}">
+            <span class="image fit"><img src="{{ page.imagesFolder }}/{{ include.image1 }}.{{ page.imagesExt }}"></span>
+        </div>
+        {% endif %}
+        {% if include.image2 %}
+        <div class="{{ include.size2 }}">
+            <span class="image fit"><img src="{{ page.imagesFolder }}/{{ include.image2 }}.{{ page.imagesExt }}"></span>
+        </div>
+        {% endif %}
+        {% if include.image3 %}
+        <div class="{{ include.size3 }}">
+            <span class="image fit"><img src="{{ page.imagesFolder }}/{{ include.image3 }}.{{ page.imagesExt }}"></span>
+        </div>
+        {% endif %}
+        {% if include.image4 %}
+        <div class="{{ include.size4 }}">
+            <span class="image fit"><img src="{{ page.imagesFolder }}/{{ include.image4 }}.{{ page.imagesExt }}"></span>
+        </div>
+        {% endif %}
+    </div>
+</div>
+<div style="clear: both;"></div>

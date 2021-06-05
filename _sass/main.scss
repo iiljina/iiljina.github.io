@@ -152,6 +152,10 @@
 
 	p {
 		margin: 0 0 _size(element-margin) 0;
+
+		&.not-real-paragraph {
+		    margin: 0 !important;
+		}
 	}
 
 	h1, h2, h3, h4, h5, h6 {
@@ -718,19 +722,19 @@
         &.left, &.right {
             max-width: 50%;
 
-            &.one-quarter {
+            &.one-quarter, &.col-3 {
                 max-width: 25%;
             }
 
-            &.one-third {
+            &.one-third, &.col-4 {
                 max-width: 33.3%;
             }
 
-            &.two-thirds {
+            &.two-thirds, &.col-8 {
                 max-width: 66.6%;
             }
 
-            &.three-quarters {
+            &.three-quarters, &.col-9 {
                 max-width: 75%
             }
 
@@ -756,10 +760,13 @@
 			display: block;
 			margin: 0 0 _size(element-margin) 0;
 			width: 100%;
+			height: 100%;
 
 			img {
 				display: block;
 				width: 100%;
+			    height: 100%;
+				object-fit: cover;
 			}
 		}
 
@@ -782,6 +789,11 @@
 			img {
 				border-radius: 0;
 			}
+		}
+
+		& > .title {
+		    display: block;
+		    text-align: center;
 		}
 	}
 
@@ -1472,19 +1484,19 @@
 				&.right {
 					max-width: 60%;
 
-					&.one-quarter {
-                        max-width: 35%;
+					&.one-quarter, &.col-3 {
+                        max-width: 25%;
                     }
 
-                    &.one-third {
+                    &.one-third, &.col-4 {
                         max-width: 45%;
                     }
 
-                    &.two-thirds {
+                    &.two-thirds, &.col-8 {
                         max-width: 60%;
                     }
 
-                    &.three-quarters {
+                    &.three-quarters, &.col-9 {
                         max-width: 75%
                     }
 
@@ -1669,31 +1681,38 @@
 			.image {
 			    &.left, &.right {
 			        max-width: 100%;
+			        margin: 0 0 1em 0;
 
-                    &.one-quarter {
+                    &.one-quarter, &.col-3 {
                         max-width: 50%;
                     }
 
-                    &.one-third {
+                    &.one-third, &.col-4 {
                         max-width: 75%;
                     }
 
-                    &.two-thirds {
+                    &.two-thirds, &.col-8 {
                         max-width: 100%;
                     }
 
-                    &.three-quarters {
+                    &.three-quarters, &.col-9 {
                         max-width: 100%
                     }
 			    }
 
 			   	&.left {
-					margin: 0 0 1em 0;
+			   	    &.one-quarter, &.col-3,
+			   	    &.one-third, &.col-4 {
+			   	        margin-right: 1.5em;
+			   	    }
 				}
 
 				&.right {
-					margin: 0 0 1em 0;
-				}
+                    &.one-quarter, &.col-3,
+                    &.one-third, &.col-4 {
+                        margin-left: 1.5em;
+                    }
+                }
 
 				&.main {
 					height: 12em;
