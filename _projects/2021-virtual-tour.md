@@ -1,7 +1,7 @@
 ---
 name: Interactive Virtual tour
 gist: That was cold.
-image: /images/projects/2021-virtual-tour/pic02.jpg
+image: /static/projects/2021-virtual-tour/images/pic02.jpg
 rows:
   - columns:
     - image: 2021-virtual-tour/pic01.jpg

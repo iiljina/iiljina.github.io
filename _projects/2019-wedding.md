@@ -1,14 +1,12 @@
 ---
 title: Travel-themed wedding
 gist: Riga, Latvia - August 2019
-
-imagesExt: jpg
-imagesFolder: /images/projects/2019-wedding
+folder: /static/projects/2019-wedding/images
 ---
 
 {% 
 include image.html 
-    image="wedding-490" 
+    image="wedding-490.jpg" 
     size="two-thirds" 
     position="right" 
 %}
@@ -25,7 +23,7 @@ Get a glimpse of that special wedding yourself. Check the details below :)
 ### Table decorations
 
 {% include image.html 
-    image="wedding-332" 
+    image="wedding-332.jpg" 
     size="one-third"
     position="left"
     title="The world map helped the quests to find their table"
@@ -45,19 +43,25 @@ The Caribbean table was decorated with cocos shells and exotic flowers in a pine
 
 All my ideas for flower compositions were throughout discussed with the florist, who was happy to create a non-standard wedding decor (incl. Asian Ikebana, alpine horn, flowers in pineapple)
 
-{% include image_row.html 
-    image1="wedding-288" size1="half"
-    image2="wedding-314" size2="one-quarter"
-    image3="wedding-313" size3="one-quarter"
+{% include image_row.html
+    gallery="tables-images"
+     
+    image1="wedding-288.jpg" size1="half" title1="Title 1"
+    image2="wedding-314.jpg" size2="one-quarter" title2="Title 2"
+    image3="wedding-313.jpg" size3="one-quarter" title3="Title 3"
 %}
-{% include image_row.html 
-    image1="wedding-303_edited" size1="one-third"
-    image2="wedding-308" size2="one-third"
-    image3="wedding-316_edited" size3="one-third"
+{% include image_row.html
+    gallery="tables-images"
+     
+    image1="wedding-303_edited.jpg" size1="one-third" title1="Title 1"
+    image2="wedding-308.jpg" size2="one-third" title2="Title 2"
+    image3="wedding-316_edited.jpg" size3="one-third" title3="Title 3"
 %}
-{% include image_row.html 
-    image1="wedding-300" size1="one-third"
-    image3="wedding-298_edited" size3="two-thirds"
+{% include image_row.html
+    gallery="tables-images"
+     
+    image1="wedding-300.jpg" size1="one-third" title1="Title 1"
+    image3="wedding-298_edited.jpg" size3="two-thirds" title3="Title 3"
 %}
 
 ### Name cards with a meaning
@@ -69,24 +73,11 @@ done on the date of marriage and a Dutch postage stamp with tulip with a year wh
 
 Postcards inside envelopes are corresponding the table-country.
 
-{% include image_row.html 
-    image1="wedding-293" size1="two-thirds"
-    image2="name_card" size2="one-third"
-%}
-
-{% capture text1 %}
-List
-- One
-- Two
-{% endcapture %}
-{% capture text2 %}
-List
-- One
-- Two
-{% endcapture %}
-{% include text_row.html 
-    text1=text1 size1="two-thirds"
-    text2=text2 size2="one-third"
+{% include image_row.html
+    gallery="wedding-293"
+     
+    image1="wedding-293.jpg" size1="two-thirds"
+    image2="name_card.jpg" size2="one-third"
 %}
 
 ### Ceremony’s look and style
@@ -96,24 +87,30 @@ The wedding ceremony was like a flight to a happy marriage, with the last call a
 The self-written wows were pronounced and rings exchanged standing between two nicely decorated hot air balloons (instead of the arch). 
 Afterwards, the paper planes were thrown at newlyweds by the quests while 'Fly me To the Moon' was played in the background.
 
-{% include image_row.html 
-    image1="wedding-349" size1="one-quarter"
-    image2="wedding-358" size2="half"
-    image3="wedding-362_edited" size3="one-quarter"
+{% include image_row.html
+    gallery="wedding-349"
+     
+    image1="wedding-349.jpg" size1="one-quarter"
+    image2="wedding-358.jpg" size2="half"
+    image3="wedding-362_edited.jpg" size3="one-quarter"
 %}
 
-{% include image_row.html 
-    image1="wedding-394" size1="half"
-    image2="wedding-358" size2="half"
+{% include image_row.html
+    gallery="wedding-394.jpg"
+     
+    image1="wedding-394.jpg" size1="half"
+    image2="wedding-358.jpg" size2="half"
 %}
 
 Two signposts with all the places where the guests come from, with the time of how long it takes to get there by foot or when it takes too long, by plane. 
 Two pairs of hiking shoes were standing (put) at their base for the atmosphere and a photo moment.
 
-{% include image_row.html 
-    image1="wedding-503" size1="one-third"
-    image2="wedding-441" size2="one-third"
-    image3="wedding-446" size3="one-third"
+{% include image_row.html
+    gallery="wedding-503"
+     
+    image1="wedding-503.jpg" size1="one-third"
+    image2="wedding-441.jpg" size2="one-third"
+    image3="wedding-446.jpg" size3="one-third"
 %}
 
 ### Multinational Wedding Traditions & Entertainment
