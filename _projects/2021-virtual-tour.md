@@ -1,13 +1,12 @@
 ---
-name: Interactive Virtual tour
 title: Interactive Virtual Tour
 gist: February 2021 - Online
-folder: /images/projects/2021-virtual-tour
+folder: /static/projects/2021-virtual-tour
 ---
 
 {% 
 include image.html 
-    image="virtual_tour_banner" 
+    image="virtual_tour_banner.jpg" 
     size="two-thirds" 
     position="right" 
 %}
@@ -24,8 +23,8 @@ I produced this event entirely individually from A to Z. I did everything from i
 risk management, to managing the event on the day (also sharing extra photos and videos related to the tour and managing the chat) and the event's evaluation. I have closely worked with the local guide (Yana) to create a balanced, engaging tour and learned a lot about virtual events during the process.
 
 {% include image_row.html 
-    image1="virt_tour_1" size1="half"
-    image2="virt_tour_2" size2="half"
+    image1="virt_tour_1.jpg" size1="half"
+    image2="virt_tour_2.jpg" size2="half"
 %}
 
 {% capture text1 %}
