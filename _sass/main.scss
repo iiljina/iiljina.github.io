@@ -715,6 +715,31 @@
 			display: block;
 		}
 
+        &.left, &.right {
+            max-width: 50%;
+
+            &.one-quarter {
+                max-width: 25%;
+            }
+
+            &.one-third {
+                max-width: 33.3%;
+            }
+
+            &.two-thirds {
+                max-width: 66.6%;
+            }
+
+            &.three-quarters {
+                max-width: 75%
+            }
+
+            img {
+                object-fit: cover;
+                width: 100%;
+            }
+        }
+
 		&.left {
 			float: left;
 			margin: 0 2.5em 2em 0;
@@ -1445,7 +1470,23 @@
 			.image {
 				&.left,
 				&.right {
-					max-width: 40%;
+					max-width: 60%;
+
+					&.one-quarter {
+                        max-width: 35%;
+                    }
+
+                    &.one-third {
+                        max-width: 45%;
+                    }
+
+                    &.two-thirds {
+                        max-width: 60%;
+                    }
+
+                    &.three-quarters {
+                        max-width: 75%
+                    }
 
 					img {
 						width: 100%;
@@ -1626,12 +1667,32 @@
 		/* Image */
 
 			.image {
-				&.left {
-					margin: 0 1.5em 1em 0;
+			    &.left, &.right {
+			        max-width: 100%;
+
+                    &.one-quarter {
+                        max-width: 50%;
+                    }
+
+                    &.one-third {
+                        max-width: 75%;
+                    }
+
+                    &.two-thirds {
+                        max-width: 100%;
+                    }
+
+                    &.three-quarters {
+                        max-width: 100%
+                    }
+			    }
+
+			   	&.left {
+					margin: 0 0 1em 0;
 				}
 
 				&.right {
-					margin: 0 0 1em 1.5em;
+					margin: 0 0 1em 0;
 				}
 
 				&.main {
