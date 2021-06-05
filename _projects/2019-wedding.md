@@ -74,6 +74,21 @@ Postcards inside envelopes are corresponding the table-country.
     image2="name_card" size2="one-third"
 %}
 
+{% capture text1 %}
+List
+- One
+- Two
+{% endcapture %}
+{% capture text2 %}
+List
+- One
+- Two
+{% endcapture %}
+{% include text_row.html 
+    text1=text1 size1="two-thirds"
+    text2=text2 size2="one-third"
+%}
+
 ### Ceremony’s look and style
 
 The wedding ceremony was like a flight to a happy marriage, with the last call and safety instructions.
