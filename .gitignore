@@ -1,5 +1,7 @@
 .idea/
 .jekyll-cache/
 _site/
+.bundle/
+vendor/
 
 .DS_Store
