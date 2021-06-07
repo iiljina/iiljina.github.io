@@ -4,6 +4,8 @@ gist: Riga, Latvia - August 2019
 folder: /static/projects/2019-wedding/images
 ---
 
+{% include image_col.html  image="wedding-490.jpg" %}
+
 {% 
 include image.html 
     image="wedding-490.jpg" 
