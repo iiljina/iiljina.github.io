@@ -1,4 +1,5 @@
 ---
+id: project.bday
 title: 16th Birthday Party - Proposal (study project)
 gist: October - December 2019
 folder: /static/projects/16th_Birthday_party

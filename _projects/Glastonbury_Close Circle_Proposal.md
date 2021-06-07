@@ -1,4 +1,5 @@
 ---
+id: project.glastonbury
 title: Glastonbury, Close Circle - Proposal (study project)
 gist: February - May 2020
 permalink: /projects/Glastonbury-Close-Circle-Proposal
