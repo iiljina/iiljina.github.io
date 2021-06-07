@@ -1,16 +1,28 @@
 main:
-  #    hello:
-  #    Everything for this specific section is defined in /index.html, at the top.
-
-  projects:
-    title: Events & Projects
-    url: /projects
-    gist: >-
-      I put all my heart and efforts into every event or (study) project, I am fully committed to delivering the best result.
-      I enjoy developing an overarching exciting event theme or concept, where every details complements the theme. I align every details to the big picture and the event's goals.
-
-  testimonials:
-    title: Feedback & Testimonials
-    url: /testimonials
-    gist: >-
-      Some intro text?
+  link: '/'
+  sections:
+    main:
+      id: ''
+      title: Main page
+      in_menu: true
+      gist: >-
+        I am happy you came to learn mor about the events I organised, proposals developed, my experiences, skills, hobbies, and testimonials.
+    intro:
+      id: 'intro'
+      title: Hello!
+      in_menu: false
+      gist: >-
+        I am happy you came to learn mor about the events I organised, proposals developed, my experiences, skills, hobbies, and testimonials.
+    projects:
+      id: 'projects'
+      title: Events & Projects
+      in_menu: true
+      gist: >-
+        I put all my heart and efforts into every event or (study) project, I am fully committed to delivering the best result.
+        I enjoy developing an overarching exciting event theme or concept, where every details complements the theme. I align every details to the big picture and the event's goals.
+    testimonials:
+      id: 'testimonials'
+      title: Feedback & Testimonials
+      in_menu: true
+      gist: >-
+        Some intro text?

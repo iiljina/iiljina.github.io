@@ -1,18 +1,23 @@
 ---
-title: Hello!
-image: /images/banner.jpg
-gist: I am happy you came to learn mor about the events I organised, proposals developed, my experiences, skills, hobbies, and testimonials.
+page_name: main
 ---
-<!-- Three -->
-<section id="three">
-    <div class="container">
-        {% assign projects_page = site.data.pages.main.projects %}
 
-        <h3>{{ projects_page.title }}</h3>
-        <p>{{ projects_page.gist }}</p>
+{% assign page_data = site.data.pages[page.page_name] %}
+{% assign sections = page_data.sections %}
+
+{% include intro.html
+    title=sections.intro.title
+    gist=sections.intro.gist
+%}
+
+{% assign projects = sections.projects %}
+<section id="{{ projects.id }}">
+    <div class="container">
+        <h3>{{ projects.title }}</h3>
+        <p>{{ projects.gist }}</p>
 
         <div class="features">
-            {% for project in site.projects limit:3 %}
+            {% for project in site.projects %}
             <article>
                 <a href="{{ project.url }}" class="image"><img src="{{ project.image }}" alt="{{ project.title }}"/></a>
                 <div class="inner">
@@ -23,18 +28,17 @@ gist: I am happy you came to learn mor about the events I organised, proposals d
             {% endfor %}
         </div>
 
-        <a href="{{ projects_page.url }}" class="button primary small icon solid">
-            See all {{ projects_page.title | downcase }}</a>
+        <a href="{{ projects.url }}" class="button primary small icon solid">
+            See all {{ projects.title | downcase }}</a>
     </div>
 </section>
 
-
 <section id="testimonials">
     <div class="container">
-        {% assign testimonials_page = site.data.pages.main.testimonials %}
+        {% assign testimonials = sections.testimonials %}
 
-        <h3>{{ testimonials_page.title }}</h3>
-        <p>{{ testimonials_page.gist }}</p>
+        <h3>{{ testimonials.title }}</h3>
+        <p>{{ testimonials.gist }}</p>
 
         {% for item_hash in site.data.testimonials %}
         {% assign testimonial_type = item_hash[1] %}
@@ -43,7 +47,8 @@ gist: I am happy you came to learn mor about the events I organised, proposals d
             <blockquote>
                 <p>{{ testimonial.text }}</p>
                 <div class="sender">
-                    <a href="{{ testimonials_page.url }}#{{ testimonial_type.type | slugify }}"
+                    <a href="{{ testimonials
+                   .url }}#{{ testimonial_type.type | slugify }}"
                        class="send-right button alt small icon solid {{ testimonial_type.icon }}">
                         More from {{ testimonial_type.type }}</a>
                 </div>

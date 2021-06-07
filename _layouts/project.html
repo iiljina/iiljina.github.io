@@ -1,6 +1,12 @@
 ---
 layout: default
 ---
+
+{% include intro.html
+    title=page.title
+    gist=page.gist
+%}
+
 <section id="projects">
     <div class="container">
         {{ content | markdownify }}
