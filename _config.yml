@@ -2,8 +2,8 @@ collections:
   projects:
     output: true
     permalink: /:collection/:name
+  testimonials:
   jobs:
-
 
 defaults:
   - scope:

@@ -19,7 +19,9 @@ page_name: main
         <div class="features">
             {% for project in site.projects %}
             <article>
-                <a href="{{ project.url }}" class="image"><img src="{{ project.image }}" alt="{{ project.title }}"/></a>
+                <a href="{{ project.url }}" class="image">
+                    <img src="{{ project.image }}" alt="{{ project.title }}"/>
+                </a>
                 <div class="inner">
                     <h4>{{ project.title }}</h4>
                     <p>{{ project.gist }}</p>
@@ -40,17 +42,15 @@ page_name: main
         <h3>{{ testimonials.title }}</h3>
         <p>{{ testimonials.gist }}</p>
 
-        {% for item_hash in site.data.testimonials %}
-        {% assign testimonial_type = item_hash[1] %}
-        {% assign testimonial = testimonial_type.list | sample %}
+        {% for testimonial in site.testimonials %}
+        {% assign testimonial_type = site.data.testimonials[testimonial.type] %}
         <div class="row">
             <blockquote>
-                <p>{{ testimonial.text }}</p>
+                <p>{{ testimonial.content }}</p>
                 <div class="sender">
-                    <a href="{{ testimonials
-                   .url }}#{{ testimonial_type.type | slugify }}"
-                       class="send-right button alt small icon solid {{ testimonial_type.icon }}">
-                        More from {{ testimonial_type.type }}</a>
+                    <a href="#" class="send-right button alt small icon solid {{ testimonial_type.icon }}">
+                        More from {{ testimonial_type.type }}
+                    </a>
                 </div>
                 <em>
                     {{ testimonial.who }} <br>
