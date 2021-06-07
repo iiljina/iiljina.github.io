@@ -35,6 +35,58 @@ page_name: main
     </div>
 </section>
 
+<section id="jobs">
+    <div class="container">
+        <div class="row">
+            <div class="col-4">
+                {% assign pms = site.jobs | where: "type", "project_management" %}
+                {% assign pms_gist = site.jobs | where: "type", "project_management_gist" | first %}
+
+                <h3>{{ site.data.jobs["comms_marketing"].text }}</h3>
+                {% for p in pms %}
+                <h4>{{ p.when }} - {{ p.where }}</h4>
+                <p>
+                    {{ p.content }}
+                </p>
+                {% endfor %}
+                <p>
+                    {{ pms_gist.content }}
+                </p>
+            </div>
+            <div class="col-4">
+                {% assign cust = site.jobs | where: "type", "customer_service" %}
+                {% assign cust_gist = site.jobs | where: "type", "customer_service_gist" | first %}
+
+                <h3>{{ site.data.jobs["customer_service"].text }}</h3>
+                {% for c in cust %}
+                <h4>{{ c.when }} - {{ c.where }}</h4>
+                <p>
+                    {{ c.content }}
+                </p>
+                {% endfor %}
+                <p>
+                    {{ cust_gist.content }}
+                </p>
+            </div>
+            <div class="col-4">
+                {% assign comms = site.jobs | where: "type", "comms_marketing" %}
+                {% assign comms_gist = site.jobs | where: "type", "comms_marketing_gist" | first %}
+
+                <h3>{{ site.data.jobs["comms_marketing"].text }}</h3>
+                {% for c in comms %}
+                <h4>{{ c.when }} - {{ c.where }}</h4>
+                <p>
+                    {{ c.content }}
+                </p>
+                {% endfor %}
+                <p>
+                    {{ comms_gist.content }}
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
 <section id="testimonials">
     <div class="container">
         {% assign testimonials = sections.testimonials %}
@@ -42,7 +94,7 @@ page_name: main
         <h3>{{ testimonials.title }}</h3>
         <p>{{ testimonials.gist }}</p>
 
-        {% for testimonial in site.testimonials | limit:2 %}
+        {% for testimonial in site.testimonials  %}
         {% assign testimonial_type = site.data.testimonials[testimonial.type] %}
         <div class="row">
             <blockquote>
