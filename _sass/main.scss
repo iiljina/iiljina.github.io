@@ -1325,7 +1325,8 @@
 /* Wrapper */
 
 	#wrapper {
-		background: _palette(bg);
+        background: url('/images/background.svg') no-repeat;
+        background-size: 1920px 1000px;
 
 		@if _misc(header-side) == 'right' {
 			padding-right: $size-header;
@@ -1339,8 +1340,6 @@
 
 	#main {
 		> section {
-			border-top: solid (_size(border-width) * 3) _palette(border);
-
 			> .container {
 				padding: 6em 0 4em 0;
 			}
