@@ -5,4 +5,4 @@ where: Amsterdam
 type: customer_service
 ---
 Effectively solved customers complaints and managed guests’ requests.
-Took responsibility and ownership of every case resolved 90% of the complaints from the first contact and scored high in customer satisfaction.
+Took responsibility and ownership of every case. I have resolved 90% of the complaints from the first contact and scored high in customer satisfaction.

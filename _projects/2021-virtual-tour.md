@@ -12,16 +12,12 @@ include image.html
     position="right" 
 %}
 
-For the online event of my final project of the Event Management course, I wanted to bring a feeling of real travelling to the people, who miss travelling during Covid-19 via the Interactive live Virtual tour.
-And it worked amazingly!
+For the online event of my final project of the Event Management course, I wanted to bring a feeling of real travelling to everyone who miss travelling during Covid-19 via the Interactive live Virtual tour. And it worked amazingly!
 
-34 attendees with their families followed the guide who was showing Saint Petersburg to them and actively participated in the tour. They decided where the guide will go next, which story will cover, shared their opinions on controversial questions via polls.
-
-The participants got a feeling of travelling and togetherness (some of the event objectives) and truly enjoyed the experience.
+34 attendees with their families followed the guide walking around Saint Petersburg and actively participated in the tour, deciding where the guide will go next, which story will cover and sharing their opinions on controversial questions via polls. The participants got a feeling of travelling and togetherness and truly enjoyed the experience.
 
 
-I produced this event entirely individually from A to Z. I did everything from idea generation and audience research, brand development and social media plan, attendee and registration management (via Eventbrite), technical part (Zoom), 
-risk management, to managing the event on the day (also sharing extra photos and videos related to the tour and managing the chat) and the event's evaluation. I have closely worked with the local guide (Yana) to create a balanced, engaging tour and learned a lot about virtual events during the process.
+I produced this event entirely individually from A to Z. I did everything from idea generation and audience research, brand development and social media plan, attendee and registration management (via Eventbrite), technical part (Zoom), risk management, to managing the event on the day (incl. sharing extra photos and videos related to the tour and managing the chat) and the event's evaluation. I have closely worked with the local guide (Yana) to create a balanced, engaging tour and learned a lot about virtual events during the process.
 
 {% include image_row.html 
     image1="virt_tour_1.jpg" size1="half"
@@ -29,12 +25,9 @@ risk management, to managing the event on the day (also sharing extra photos and
 %}
 
 {% capture text1 %}
-### The event's evaluation has shown that (or The Results)- make them look at pinned sticky notes (as the background):
+### The event's evaluation has shown:
 
-- All the objectives were met
-
-- We delivered what promised 
-(a feeling of travelling, togetherness, a feeling of walking in Saint Petersburg and more)
+- All the objectives were met (can be seen in the Leave Behind)
 
 - Marketing messages resonated with the target audience
 
@@ -43,7 +36,7 @@ risk management, to managing the event on the day (also sharing extra photos and
 - 95% of the audience were engaged during the whole event.
 {% endcapture %}
 {% capture text2 %}
-### From the Survey (move to feedback):
+### From the Post Event Survey:
 
 - Great overall impression (100%)
 
@@ -60,7 +53,7 @@ risk management, to managing the event on the day (also sharing extra photos and
     text2=text2 size2="half"
 %}
 
-Feedback
+ ### Attendees Feedback
 
 
 "It is a great idea, especially nowadays when we cannot travel. I really liked that the tour was live and that there were interactive parts. I learned a lot actually, even though I’ve been living in St.Petersburg for 14 years in the past."
@@ -75,4 +68,16 @@ Feedback
 Feel free to check the Leave Behind for all the event details: button!
 Or walk the snowy Peter and Paul fortress with Yana and hear the exciting stories: button
 _Please note: polls are not available in the recording._
+
+
+I got The destinction for this final project:
+
+"You produced a professionally presented document, with a consistent look and feel to your overall event brand . You included most elements required for the planning process, timeline, function sheet, RA, budget. I would like to have seen a SWOT analysis for the event, identifying and planning for. I loved the use of the event journey, very clear. 
+
+Creative content - your event idea was strong, it was a very engaging, fun, tour, one that I believe you could replicate! I know you had a number of issues in the planning process, well done for managing them, being resilient and producing a project that delivers on all the objectives.
+Learnings - it is evident you have learnt a lot, thanks for sharing these and I hope that you will implement them in the future.
+
+Well done Inna, this 4th project has really proved you have the skills to become a great event professional. I hope you find that job you are searching for soon and can continue your exciting journey in the events industry. "
+
+Clare Lawrence, Online Course Director, Events Academy
 

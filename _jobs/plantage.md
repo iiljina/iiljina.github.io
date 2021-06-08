@@ -4,8 +4,7 @@ when: 09/2014 - 07/2016
 where: Amsterdam
 type: customer_service
 ---
-Recommended the best Amsterdam places to the clients, helped with the requests and solved problems;
-Took care of the reservations
+Recommended the best places in Amsterdam to the clients, helped with the requests and solved problems, took care of the reservations
 
 
 ### I have learned to:
