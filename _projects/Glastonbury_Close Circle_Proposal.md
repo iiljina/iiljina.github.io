@@ -13,22 +13,19 @@ include image.html
     position="left" 
 %}
 
-It was the first group project at the Event management Postgraduate course. We came up and developed a detailed plan for the client request to bring the artist closer to the audience. Namely, we proposed a concept of a close living room concert, inviting the audience to step into the world of the artist and join his or her close circle. (edit the first part)
+As a first group project of the Event Management Postgraduate course, we had to come up witha  side event at glastonbury Festival, which would bring the artists closer to the audience. We developed and proposed a concept of a living room concert, inviting the audience to step into the world of the artist and join his or her close circle.
 
-Feel free to have a look at the proposal to know all the exciting details of Close Circle.
+I massively enjoyed developing Close Circle concept while working on the production plan and details, social media plan and event evaluation, ticket management and attendee management plans, interaction with the artist. I have also created a Production Schedule (or timeline) and a Function sheet.
+
+Feel free to have a look at the proposal(button) to see all the exciting details of the Close Circle event.
 
 ### Process and Learning Points
 
-With two of my coursemates, we worked as a team and as a real event agency, overcoming the difficulties, answering tons of arising questions on the way. For example, on the last third before the deadline, one teammate left the course and left us with totally not completed her part of the project. Because of this I urgently researched and learned in details about festival sponsorship.
+With two of my coursemates, we worked as a real event agency, overcoming the difficulties, answering arising questions and challenges. For example, on the last third before the deadline, our fourth teammate suddenly dropped out of the course and left us with totally uncompeled Sponsorship part she was responsible for.  I have immediately dived into the sponsorship topic and swiftly developed the sponsorship packages so the project still could be delivered on time.
 
+Besides, I was also a project manager of our team, making sure that we as a team don't deviate from the brief (event objectives) and will deliver the project on time, as well as ensuring that no useful information or idea is lost. Few times I had to be persistent and firmly explain why we should do this way and not the other. Afterwards, the team thanked me for my persistence. Our proposal was evaluated as one of the best in the entire course history. 
 
-Besides, I was also a project manager of our team, making sure that we as a team don't deviate from the brief (event objectives) and will deliver the project on time, as well as ensuring that no useful information or idea is lost. Few times I had to be persistent and firmly explain why we should do this way and not the other. Afterwards, the team thanked me for my persistence. Our proposal was evaluated as one of the best in the entire course history.
-
-
-
-I massively enjoyed developing Close Circle concept while working on the production plan and details, social media plan and event evaluation, ticket management plan and attendee management plan, interaction with the artist. I have also created a Production Schedule (or timeline) and a Function sheet.
-
-
+I was also the team player who motivated the others to stay positive and deliver everything at teh highest standards despite the tiredeness and extra challenges that came our way.
 
 Close Circle project was a real rollercoaster with ups and downs, miscommunications, as well as the unity of ideas and eureka moments. I learned a lot about various aspects of event management, improved my interpersonal and leadership skills.
 
@@ -60,8 +57,8 @@ Structure/Production – delivered on the details, how you would bring your conc
 
 Logistics – many small elements of attention, for example, the use of colour coding, making zones so that you can manage the audience in the time given, it’s the little elements that stand out and win your work
 
-SoMe – strong strategic plan, well delivered.
+Social Media – strong strategic plan, well delivered.
 
 Documentation – well delivered"
 
-Clare Lawrence, Tutor at the Events Academy
+Clare Lawrence, Online Course Director, Events Academy
