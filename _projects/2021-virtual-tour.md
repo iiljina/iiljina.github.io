@@ -1,8 +1,10 @@
 ---
 id: project.virtual-tour
+sort: 1
 title: Interactive Virtual Tour
 gist: February 2021 - Online
 folder: /static/projects/2021-virtual-tour
+image: virtual_tour_small.jpg
 ---
 
 {% 

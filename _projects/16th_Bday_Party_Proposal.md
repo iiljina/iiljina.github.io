@@ -1,14 +1,16 @@
 ---
 id: project.bday
-title: 16th Birthday Party - Proposal (study project)
+sort: 6
+title: 16th Birthday Party
 gist: October - December 2019
 folder: /static/projects/16th_Birthday_party
+image: banner.png
 permalink: /projects/16th-Birthday-Party-Proposal
 ---
 
 {% 
 include image.html 
-    image="16th bday.png" 
+    image="16th_bday.png" 
     size="half" 
     position="right" 
 %}

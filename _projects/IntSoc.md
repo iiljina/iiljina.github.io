@@ -1,8 +1,10 @@
 ---
 id: project.intsoc
+sort: 3
 title: International Society's Events
 gist: Newcastle University, UK - 09/2012 - 05/ 2014
 folder: /static/projects/IntSoc
+image: banner.jpg
 ---
 With the International Student society of Newcastle University (IntSoc), my passion for organising events started. For two years, and especially when I was a society’s president, I was fully responsible for organising big monthly themed events and trips around the UK, small weekly events like comedy nights and pub quizzes for about 40 active members. Apart from organising those events, I was actively promoting them and the society online (on Facebook and emails) and in person. I brainstormed for fresh event ideas, planned the events for the whole academic year and managed the budget for them.
 
