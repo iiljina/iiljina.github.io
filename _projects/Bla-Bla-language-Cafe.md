@@ -1,6 +1,5 @@
 ---
 title: Bla Bla Language Caffe
-sort: 4
 gist: Amsterdam, August - October 2020
 permalink: /projects/bla-bla
 folder: /static/projects/Bla-Bla

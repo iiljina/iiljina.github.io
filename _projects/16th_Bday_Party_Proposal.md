@@ -1,6 +1,5 @@
 ---
 id: project.bday
-sort: 6
 title: 16th Birthday Party
 gist: October - December 2019
 folder: /static/projects/16th_Birthday_party

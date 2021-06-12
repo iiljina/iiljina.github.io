@@ -2,7 +2,13 @@ collections:
   projects:
     output: true
     permalink: /:collection/:name
-    sort_by: sort
+    order:
+      - 2021-virtual-tour.md
+      - 2019-wedding.md
+      - IntSoc.md
+      - Bla-Bla-language-Cafe.md
+      - Glastonbury_Close_Circle_Proposal.md
+      - 16th_Bday_Party_Proposal.md
   testimonials:
   jobs:
 

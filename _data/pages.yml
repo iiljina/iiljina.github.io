@@ -1,28 +1,25 @@
 main:
   link: '/'
   sections:
-    main:
-      id: ''
-      title: Main page
-      in_menu: true
-      gist: >-
-        I am happy you came to learn mor about the events I organised, proposals developed, my experiences, skills, hobbies, and testimonials.
-    intro:
-      id: 'intro'
+    top:
+      id: 'top'
       title: Hello!
       in_menu: false
+      icon: fa-home
       gist: >-
         I am happy you came to learn mor about the events I organised, proposals developed, my experiences, skills, hobbies, and testimonials.
     projects:
       id: 'projects'
       title: Events & Projects
       in_menu: true
+      icon: fa-th
       gist: >-
-        I  put all my heart and efforts into every event/project I do and am fully committed to delivering the best result.
+        I put all my heart and efforts into every event/project I do and am fully committed to delivering the best result.
         I enjoy developing an overarching event concept, where every detail complements the theme. I align every detail to the big picture and the event’s goals and make sure to deliver immersive and memorable experiences.
     testimonials:
       id: 'testimonials'
       title: Feedback & Testimonials
       in_menu: true
+      icon: fa-envelope
       gist: >-
         Some intro text?

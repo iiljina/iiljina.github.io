@@ -1,6 +1,5 @@
 ---
 id: project.intsoc
-sort: 3
 title: International Society's Events
 gist: Newcastle University, UK - 09/2012 - 05/ 2014
 folder: /static/projects/IntSoc

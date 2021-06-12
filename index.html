@@ -5,33 +5,39 @@ page_name: main
 {% assign page_data = site.data.pages[page.page_name] %}
 {% assign sections = page_data.sections %}
 
-{% include intro.html
-    title=sections.intro.title
-    gist=sections.intro.gist
+{% include page_intro.html
+    title=sections.top.title
+    gist=sections.top.gist
 %}
 
 {% assign projects = sections.projects %}
 <section id="{{ projects.id }}">
     <div class="container">
-        <h3>{{ projects.title }}</h3>
+        <h2>{{ projects.title }}</h2>
         <p>{{ projects.gist }}</p>
 
-        <div class="features">
-            {% for project in site.projects %}
-            <article>
-                <a href="{{ project.url }}" class="image">
-                    <img src="{{ project.image }}" alt="{{ project.title }}"/>
-                </a>
-                <div class="inner">
-                    <h4>{{ project.title }}</h4>
-                    <p>{{ project.gist }}</p>
+        <div class="row projects">
+            {% assign totalProjects = site.projects.size %}
+            {% assign items_per_col  = totalProjects | divided_by: 3 %}
+            {% assign num_cols  = totalProjects | divided_by: items_per_col | minus: 1 %}
+
+            {% for i in (0..num_cols) %}
+                <div class="col-4 col-12-small">
+                {% assign offset = i | times: items_per_col %}
+                {% for project in site.projects limit: items_per_col offset: offset %}
+                    <article class="item">
+                        <a href="{{ project.url }}" class="image fit">
+                            <img src="{{project.folder}}/{{ project.image }}" alt="{{ project.title }}" />
+
+                            <div class="inner">
+                                <h5>{{ project.title }}</h5>
+                            </div>
+                        </a>
+                    </article>
+                {% endfor %}
                 </div>
-            </article>
             {% endfor %}
         </div>
-
-        <a href="{{ projects.url }}" class="button primary small icon solid">
-            See all {{ projects.title | downcase }}</a>
     </div>
 </section>
 

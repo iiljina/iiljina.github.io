@@ -1,27 +1,37 @@
 <section id="header">
-    <header>
-        <a href="/" class="image avatar"><img src="/images/avatar.jpg" alt=""/></a>
-        <h1 id="logo"><a href="/">{{ site.data.me.name }} {{ site.data.me.lastname }}</a></h1>
-        <p>{{ site.data.me.motto }}</p>
-    </header>
-    <nav id="nav">
-        <ul>
-            {% assign page_data = site.data.pages[page.page_name] %}
-            {% for sections_hash in page_data.sections %}
-            {% assign section = sections_hash[1] %}
-            {% if section.in_menu %}
-            <li><a href="{{ page_data.link }}#{{ section.id }}">{{ section.title }}</a></li>
-            {% endif %}
-            {% endfor %}
-        </ul>
-    </nav>
+
+        <header>
+            <a href="/" class="image avatar"><img src="/images/avatar.jpg" alt=""/></a>
+            <h1 id="logo">{{ site.data.me.name }} {{ site.data.me.lastname }}</h1>
+            <p>{{ site.data.me.role }}</p>
+        </header>
+
+        <nav id="nav">
+            <ul>
+                {% assign page_data = site.data.pages[page.page_name] %}
+                {% for sections_hash in page_data.sections %}
+                    {% assign section = sections_hash[1] %}
+                    {% if section.in_menu %}
+                        <li>
+                            <a href="#{{ section.id }}" id="{{ section.id }}-link">
+                                <span class="icon solid {{ section.icon }}"></span>
+                                {{ section.title }}
+                            </a>
+                        </li>
+                    {% endif %}
+                {% endfor %}
+            </ul>
+        </nav>
+
+    </div>
+
     <footer>
         <ul class="icons">
-            <li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
-            <li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
-            <li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
-            <li><a href="#" class="icon brands fa-github"><span class="label">Github</span></a></li>
-            <li><a href="#" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
+            <li><a href="#" class="icon brands fa-twitter" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"><span class="label">Twitter</span></a></li>
+            <li><a href="#" class="icon brands fa-facebook-f" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"><span class="label">Facebook</span></a></li>
+            <li><a href="#" class="icon brands fa-github" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"><span class="label">Github</span></a></li>
+            <li><a href="#" class="icon brands fa-dribbble" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"><span class="label">Dribbble</span></a></li>
+            <li><a href="#" class="icon solid fa-envelope" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"><span class="label">Email</span></a></li>
         </ul>
     </footer>
 </section>

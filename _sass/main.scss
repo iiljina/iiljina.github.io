@@ -1325,9 +1325,6 @@
 /* Wrapper */
 
 	#wrapper {
-        background: url('/images/background.svg') no-repeat;
-        background-size: 1920px 1000px;
-
 		@if _misc(header-side) == 'right' {
 			padding-right: $size-header;
 		}
@@ -1926,3 +1923,62 @@
 			}
 
 	}
+
+// ---------------
+
+#nav {
+    ul {
+        li {
+            .icon {
+                position: absolute;
+                right: _size(element-margin);
+            }
+        }
+    }
+}
+
+.projects {
+    .item {
+        margin-bottom: _size(element-margin);
+        img {
+            border: solid 1px _palette(border3);
+            border-bottom: 0 none;
+            border-radius: _size(border-radius) _size(border-radius) 0 0;
+        }
+
+        .inner {
+            background: _palette(bg);
+            padding: _size(element-margin) 0;
+            border: solid 1px _palette(border3);
+            border-top: 0 none;
+            border-radius: 0 0 _size(border-radius) _size(border-radius);
+            text-align: center;
+        }
+
+        transition: _duration(transition);
+        img {
+            opacity: 0.95;
+            transition: _duration(transition);
+        }
+        &:hover {
+            transform: scale(_size(scale-up));
+            img {
+                opacity: 1;
+            }
+        }
+    }
+}
+
+.gallery {
+    a img {
+        transition: _duration(transition);
+        &:hover {
+            transform: scale(_size(scale-up));
+        }
+    }
+}
+
+
+#wrapper {
+    background: url('/images/background.svg') no-repeat;
+}
