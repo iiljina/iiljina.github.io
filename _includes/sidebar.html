@@ -1,29 +1,27 @@
 <section id="header">
 
-        <header>
-            <a href="/" class="image avatar"><img src="/images/avatar.jpg" alt=""/></a>
-            <h1 id="logo">{{ site.data.me.name }} {{ site.data.me.lastname }}</h1>
-            <p>{{ site.data.me.role }}</p>
-        </header>
+    <header>
+        <a href="/" class="image avatar"><img src="/images/avatar.jpg" alt=""/></a>
+        <h1 id="logo">{{ site.data.me.name }} {{ site.data.me.lastname }}</h1>
+        <p>{{ site.data.me.role }}</p>
+    </header>
 
-        <nav id="nav">
-            <ul>
-                {% assign page_data = site.data.pages[page.page_name] %}
-                {% for sections_hash in page_data.sections %}
-                    {% assign section = sections_hash[1] %}
-                    {% if section.in_menu %}
-                        <li>
-                            <a href="#{{ section.id }}" id="{{ section.id }}-link">
-                                <span class="icon solid {{ section.icon }}"></span>
-                                {{ section.title }}
-                            </a>
-                        </li>
-                    {% endif %}
-                {% endfor %}
-            </ul>
-        </nav>
-
-    </div>
+    <nav id="nav">
+        <ul>
+            {% assign page_data = site.data.pages[page.page_name] %}
+            {% for sections_hash in page_data.sections %}
+                {% assign section = sections_hash[1] %}
+                {% if section.in_menu %}
+                    <li>
+                        <a href="#{{ section.id }}" id="{{ section.id }}-link">
+                            <span class="icon solid {{ section.icon }}"></span>
+                            {{ section.title }}
+                        </a>
+                    </li>
+                {% endif %}
+            {% endfor %}
+        </ul>
+    </nav>
 
     <footer>
         <ul class="icons">

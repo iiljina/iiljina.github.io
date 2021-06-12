@@ -5,140 +5,121 @@ page_name: main
 {% assign page_data = site.data.pages[page.page_name] %}
 {% assign sections = page_data.sections %}
 
-{% include page_intro.html
-    title=sections.top.title
-    gist=sections.top.gist
-%}
+{% capture content %}
+<p>I am happy you came to learn mor about the events I organised, proposals developed, my experiences, skills, hobbies,
+    and testimonials.</p>
+{% endcapture %}
+{% include section.html section=sections.top content=content %}
 
-{% assign projects = sections.projects %}
-<section id="{{ projects.id }}">
-    <div class="container">
-        <h2>{{ projects.title }}</h2>
-        <p>{{ projects.gist }}</p>
+{% capture content %}
+<div class="row projects">
+    {% assign totalProjects = site.projects.size %}
+    {% assign items_per_col = totalProjects | divided_by: 3 %}
+    {% assign num_cols = totalProjects | divided_by: items_per_col | minus: 1 %}
 
-        <div class="row projects">
-            {% assign totalProjects = site.projects.size %}
-            {% assign items_per_col  = totalProjects | divided_by: 3 %}
-            {% assign num_cols  = totalProjects | divided_by: items_per_col | minus: 1 %}
+    {% for i in (0..num_cols) %}
+    <div class="col-4 col-12-small">
+        {% assign offset = i | times: items_per_col %}
+        {% for project in site.projects limit: items_per_col offset: offset %}
+        <article class="item">
+            <a href="{{ project.url }}" class="image fit">
+                <img src="{{project.folder}}/{{ project.image }}" alt="{{ project.title }}"/>
 
-            {% for i in (0..num_cols) %}
-                <div class="col-4 col-12-small">
-                {% assign offset = i | times: items_per_col %}
-                {% for project in site.projects limit: items_per_col offset: offset %}
-                    <article class="item">
-                        <a href="{{ project.url }}" class="image fit">
-                            <img src="{{project.folder}}/{{ project.image }}" alt="{{ project.title }}" />
-
-                            <div class="inner">
-                                <h5>{{ project.title }}</h5>
-                            </div>
-                        </a>
-                    </article>
-                {% endfor %}
+                <div class="inner">
+                    <h5>{{ project.title }}</h5>
                 </div>
-            {% endfor %}
-        </div>
-    </div>
-</section>
-
-<section id="jobs">
-    <div class="container">
-        <div class="row">
-            <div class="col-4">
-                {% assign pms = site.jobs | where: "type", "project_management" %}
-                {% assign pms_gist = site.jobs | where: "type", "project_management_gist" | first %}
-
-                <h3>{{ site.data.jobs["comms_marketing"].text }}</h3>
-                {% for p in pms %}
-                <h4>{{ p.when }} - {{ p.where }}</h4>
-                <p>
-                    {{ p.content }}
-                </p>
-                {% endfor %}
-                <p>
-                    {{ pms_gist.content }}
-                </p>
-            </div>
-            <div class="col-4">
-                {% assign cust = site.jobs | where: "type", "customer_service" %}
-                {% assign cust_gist = site.jobs | where: "type", "customer_service_gist" | first %}
-
-                <h3>{{ site.data.jobs["customer_service"].text }}</h3>
-                {% for c in cust %}
-                <h4>{{ c.when }} - {{ c.where }}</h4>
-                <p>
-                    {{ c.content }}
-                </p>
-                {% endfor %}
-                <p>
-                    {{ cust_gist.content }}
-                </p>
-            </div>
-            <div class="col-4">
-                {% assign comms = site.jobs | where: "type", "comms_marketing" %}
-                {% assign comms_gist = site.jobs | where: "type", "comms_marketing_gist" | first %}
-
-                <h3>{{ site.data.jobs["comms_marketing"].text }}</h3>
-                {% for c in comms %}
-                <h4>{{ c.when }} - {{ c.where }}</h4>
-                <p>
-                    {{ c.content }}
-                </p>
-                {% endfor %}
-                <p>
-                    {{ comms_gist.content }}
-                </p>
-            </div>
-        </div>
-    </div>
-</section>
-
-<section id="testimonials">
-    <div class="container">
-        {% assign testimonials = sections.testimonials %}
-
-        <h3>{{ testimonials.title }}</h3>
-        <p>{{ testimonials.gist }}</p>
-
-        {% for testimonial in site.testimonials %}
-        {% assign testimonial_type = site.data.testimonials[testimonial.type] %}
-        <div class="row">
-            <blockquote>
-                <p>{{ testimonial.content }}</p>
-                <div class="sender">
-                    <a href="#" class="send-right button alt small icon solid {{ testimonial_type.icon }}">
-                        More from {{ testimonial_type.text }}
-                    </a>
-                </div>
-                <em>
-                    {{ testimonial.who }} <br>
-                    {{ testimonial.where }}
-                </em>
-            </blockquote>
-        </div>
+            </a>
+        </article>
         {% endfor %}
     </div>
-</section>
+    {% endfor %}
+</div>
+{% endcapture %}
+{% include section.html section=sections.projects content=content %}
 
+{% capture content %}
+<div class="row">
+    <div class="col-4">
+        {% assign pms = site.jobs | where: "type", "project_management" %}
+        {% assign pms_gist = site.jobs | where: "type", "project_management_gist" | first %}
 
-<section>
-    <div class="container">
-        <h3>Planning, socialising, being active and curios are in my DNA</h3>
-        <div class="row">
-            <div class="col-2"></div>
-            <div class="col-8">
-                <p>
-                    I enjoy discovering new places, meeting new and old friends, trying new activities (e.g yoga with
-                    goats, drama classes, bungee dance). I love learning new things and daily broaden my horizons,
-                    developing both personally and professionally. ​
-                </p>
-                <p>
-                    I just love planning trips, finding the most interesting places and experiences, developing not
-                    trivial itineraries. Over the last 5 years, I have organised countless trips with family and friends
-                    and visited 20+ countries.
-                </p>
-            </div>
-            <div class="col-2"></div>
-        </div>
+        <h3>{{ site.data.jobs["comms_marketing"].text }}</h3>
+        {% for p in pms %}
+        <h4>{{ p.when }} - {{ p.where }}</h4>
+        <p>
+            {{ p.content }}
+        </p>
+        {% endfor %}
+        <p>
+            {{ pms_gist.content }}
+        </p>
     </div>
-</section>
+    <div class="col-4">
+        {% assign cust = site.jobs | where: "type", "customer_service" %}
+        {% assign cust_gist = site.jobs | where: "type", "customer_service_gist" | first %}
+
+        <h3>{{ site.data.jobs["customer_service"].text }}</h3>
+        {% for c in cust %}
+        <h4>{{ c.when }} - {{ c.where }}</h4>
+        <p>
+            {{ c.content }}
+        </p>
+        {% endfor %}
+        <p>
+            {{ cust_gist.content }}
+        </p>
+    </div>
+    <div class="col-4">
+        {% assign comms = site.jobs | where: "type", "comms_marketing" %}
+        {% assign comms_gist = site.jobs | where: "type", "comms_marketing_gist" | first %}
+
+        <h3>{{ site.data.jobs["comms_marketing"].text }}</h3>
+        {% for c in comms %}
+        <h4>{{ c.when }} - {{ c.where }}</h4>
+        <p>
+            {{ c.content }}
+        </p>
+        {% endfor %}
+        <p>
+            {{ comms_gist.content }}
+        </p>
+    </div>
+</div>
+{% endcapture %}
+{% include section.html section=sections.work content=content %}
+
+{% capture content %}
+Skills
+{% endcapture %}
+{% include section.html section=sections.skills content=content %}
+
+{% capture content %}
+{% for testimonial in site.testimonials %}
+{% assign testimonial_type = site.data.testimonials[testimonial.type] %}
+<div class="row">
+    <blockquote>
+        <p>{{ testimonial.content }}</p>
+        <div class="sender">
+            <a href="#" class="send-right button alt small icon solid {{ testimonial_type.icon }}">
+                More from {{ testimonial_type.text }}
+            </a>
+        </div>
+        <em>
+            {{ testimonial.who }} <br>
+            {{ testimonial.where }}
+        </em>
+    </blockquote>
+</div>
+{% endfor %}
+{% endcapture %}
+{% include section.html section=sections.testimonials content=content %}
+
+{% capture content %}
+Hobbies
+{% endcapture %}
+{% include section.html section=sections.hobbies content=content %}
+
+{% capture content %}
+Summary
+{% endcapture %}
+{% include section.html section=sections.summary content=content %}

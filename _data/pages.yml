@@ -4,10 +4,11 @@ main:
     top:
       id: 'top'
       title: Hello!
+      major: true
       in_menu: false
       icon: fa-home
       gist: >-
-        I am happy you came to learn mor about the events I organised, proposals developed, my experiences, skills, hobbies, and testimonials.
+        Immersive experiences that amaze, inspire and unite.
     projects:
       id: 'projects'
       title: Events & Projects
@@ -16,10 +17,33 @@ main:
       gist: >-
         I put all my heart and efforts into every event/project I do and am fully committed to delivering the best result.
         I enjoy developing an overarching event concept, where every detail complements the theme. I align every detail to the big picture and the event’s goals and make sure to deliver immersive and memorable experiences.
+    work:
+      id: 'work'
+      title: 'Work experience'
+      in_menu: true
+      icon: fa-briefcase
+    skills:
+      id: 'skills'
+      title: 'Events Skills Proved'
+      in_menu: true
+      icon: fa-award
+      gist: >-
+        I've been involved in vaiour work experiences, where I shows and developer the most essential skills for a successful event manager.
+        Here I have connected the skills with my work and event experiences.
     testimonials:
       id: 'testimonials'
       title: Feedback & Testimonials
       in_menu: true
-      icon: fa-envelope
+      icon: fa-comments
+    hobbies:
+      id: 'hobbies'
+      title: Hobbies
+      in_menu: true
+      icon: fa-hiking
       gist: >-
-        Some intro text?
+        Planning, socialising, being active and curious are in my DNA.
+    summary:
+      id: 'summary'
+      title: My mission, let's talk
+      in_menu: true
+      icon: fa-smile-wink
