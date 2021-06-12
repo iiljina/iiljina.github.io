@@ -6,6 +6,8 @@ folder: /static/projects/2021-virtual-tour
 image: virtual_tour_small.jpg
 ---
 
+{% include menu.md %}
+
 {% 
 include image.html 
     image="virtual_tour_banner.jpg" 

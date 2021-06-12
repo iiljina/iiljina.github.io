@@ -1,10 +1,13 @@
 ---
+page_name: project.blablacafe
 title: Bla Bla Language Caffe
 gist: Amsterdam, August - October 2020
 permalink: /projects/bla-bla
 folder: /static/projects/Bla-Bla
 image: banner.jpg
 ---
+
+{% include menu.md %}
 
 In summer 2020 a well known worldwide Language caffe was looking for volunteers to reactivate the language cafe in Amsterdam. Together with one more volunteer we found the venue (corona proof) reactivated the Facebook page of Bla Bla Language Caffe Amsterdam and organised two successful Bla Bla events full of participants. We stopped because of Corona regulations, but plan to continue, as the event was very popular and we truly enjoyed it ourselves too.
 

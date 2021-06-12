@@ -9,17 +9,33 @@
     <nav id="nav">
         <ul>
             {% assign page_data = site.data.pages[page.page_name] %}
-            {% for sections_hash in page_data.sections %}
-                {% assign section = sections_hash[1] %}
-                {% if section.in_menu %}
-                    <li>
-                        <a href="#{{ section.id }}" id="{{ section.id }}-link">
-                            <span class="icon solid {{ section.icon }}"></span>
-                            {{ section.title }}
-                        </a>
-                    </li>
-                {% endif %}
-            {% endfor %}
+
+            {% if page_data %}
+                {% for sections_hash in page_data.sections %}
+                    {% assign section = sections_hash[1] %}
+                    {% if section.in_menu %}
+                        <li>
+                            <a href="#{{ section.name }}" id="{{ section.name }}-link">
+                                <span class="icon solid {{ section.icon }}"></span>
+                                {{ section.title }}
+                            </a>
+                        </li>
+                    {% endif %}
+                {% endfor %}
+            {% else %}
+            <li>
+                <a id="home-link" href="/">
+                    <span class="icon solid fa-home"></span>
+                    Go back to main page
+                </a>
+            </li>
+            <li>
+                <a id="top-link" href="#top" class="always-active">
+                    <span class="icon solid fa-file"></span>
+                    {{ page.title }}
+                </a>
+            </li>
+            {% endif %}
         </ul>
     </nav>
 

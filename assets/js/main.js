@@ -57,7 +57,16 @@
 	// Header Panel.
 
 		// Nav.
-			var $nav_a = $nav.find('a');
+		    var $toc = $("#markdown-toc li")
+		    $.each($toc.find('a'), function(i, v) {
+		        var $v = $(v),
+		            newId = $v.attr('id').replace("markdown-toc-", '');
+		        $v.attr('id', newId + "-link");
+		    })
+		    $nav.find("ul").append($toc)
+		    $("#markdown-toc").remove();
+
+		    var $nav_a = $nav.find('a');
 
 			$nav_a
 				.addClass('scrolly')
@@ -81,8 +90,12 @@
 				.each(function() {
 
 					var	$this = $(this),
-						id = $this.attr('href'),
-						$section = $(id);
+						href = $this.attr('href');
+					if (!href.startsWith('#')) {
+    					return;
+					}
+
+					var $section = $(href);
 
 					// No section for this link? Bail.
 						if ($section.length < 1)
@@ -90,9 +103,9 @@
 
 					// Scrollex.
 						$section.scrollex({
-							mode: 'middle',
-							top: '5vh',
-							bottom: '5vh',
+							mode: 'top',
+//							top: '-30%',
+//							bottom: '-30%',
 							initialize: function() {
 
 								// Deactivate section.
@@ -145,7 +158,7 @@
 
 	// Scrolly.
 		$('.scrolly').scrolly({
-			speed: 1000,
+			speed: 500,
 			offset: function() {
 
 				if (breakpoints.active('<=medium'))

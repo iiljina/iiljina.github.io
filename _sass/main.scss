@@ -1312,6 +1312,10 @@
 							background: _palette(bg);
 							color: _palette(header, bg) !important;
 						}
+						&.always-active {
+						    background: _palette(fg-light);
+						    color: _palette(header, fg-bold) !important;
+						}
 					}
 
 					&:first-child {

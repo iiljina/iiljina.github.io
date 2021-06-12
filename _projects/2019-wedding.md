@@ -1,9 +1,12 @@
 ---
+page _name: project.wedding
 title: Travel-Themed Wedding
 gist: Riga, Latvia - August 2019
 folder: /static/projects/2019-wedding/images
 image: banner.jpg
 ---
+
+{% include menu.md %}
 
 {% 
 include image.html 

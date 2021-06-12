@@ -1,11 +1,11 @@
-<section id="{{ include.section.id }}">
+<section id="{{ include.section.name }}">
     <div class="container">
-        {% if include.section.major %}
+        {% if include.major %}
         <header class="major">
         {% endif %}
 
             {% if include.section.title %}
-            <h2>{{ include.section.title }}</h2>
+            <h2 id="top">{{ include.section.title }}</h2>
             {% endif %}
 
             {% if include.section.gist %}
@@ -14,7 +14,7 @@
 
             {{ include.content }}
 
-        {% if include.section.major %}
+        {% if include.major %}
         </header>
         {% endif %}
     </div>
