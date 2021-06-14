@@ -3,44 +3,44 @@ main:
     top:
       name: 'top'
       title: Hello!
-      in_menu: false
       gist: >-
         Immersive experiences that amaze, inspire and unite.
     projects:
-      name: 'projects'
-      title: Events & Projects
-      in_menu: true
+      name: projects
+      title: Events and Proposals
+      menu_title: Events & Projects
       icon: fa-th
       gist: >-
         I put all my heart and efforts into every event/project I do and am fully committed to delivering the best result.
-        I enjoy developing an overarching event concept, where every detail complements the theme. I align every detail to the big picture and the event’s goals and make sure to deliver immersive and memorable experiences.
+        I enjoy developing an overarching event concept, where every detail complements the theme.
+        I align every detail to the big picture and the event’s goals and make sure to deliver immersive and memorable experiences.
     work:
-      name: 'work'
-      title: 'Other work experience'
-      in_menu: true
+      name: work
+      title: Other Work Experiences / Not only Events
+      menu_title: Other work experiences
       icon: fa-briefcase
     skills:
-      name: 'skills'
-      title: 'Events Skills Proved'
-      in_menu: true
+      name: skills
+      title: Events Skills Proved
+      menu_title: Skills
       icon: fa-award
       gist: >-
         I've been involved in vaiour work experiences, where I shows and developer the most essential skills for a successful event manager.
         Here I have connected the skills with my work and event experiences.
     testimonials:
-      name: 'testimonials'
-      title: Feedback & Testimonials
-      in_menu: true
+      name: testimonials
+      title: Feedback and Testimonials
+      menu_title: Feedback & Testimonials
       icon: fa-comments
     hobbies:
-      name: 'hobbies'
+      name: hobbies
       title: Hobbies
-      in_menu: true
+      menu_title: Hobbies
       icon: fa-hiking
       gist: >-
         Planning, socialising, being active and curious are in my DNA.
     summary:
-      name: 'summary'
-      title: My mission, let's talk
-      in_menu: true
+      name: summary
+      title: (Summary) My Mission - let's talk
+      menu_title: My mission, let's talk
       icon: fa-smile-wink

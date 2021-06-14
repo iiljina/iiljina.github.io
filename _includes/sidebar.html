@@ -13,11 +13,11 @@
             {% if page_data %}
                 {% for sections_hash in page_data.sections %}
                     {% assign section = sections_hash[1] %}
-                    {% if section.in_menu %}
+                    {% if section.menu_title %}
                         <li>
                             <a href="#{{ section.name }}" id="{{ section.name }}-link">
                                 <span class="icon solid {{ section.icon }}"></span>
-                                {{ section.title }}
+                                {{ section.menu_title }}
                             </a>
                         </li>
                     {% endif %}
