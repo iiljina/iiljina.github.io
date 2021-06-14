@@ -11,6 +11,16 @@ collections:
       - 16th_Bday_Party_Proposal.md
   testimonials:
   jobs:
+    order:
+      - project_management/attached.md
+      - project_management/transperfect.md
+      - project_management/gist.md
+      - customer_service/booking.md
+      - customer_service/plantage.md
+      - customer_service/gist.md
+      - comms_marketing/do_teacher_training.md
+      - comms_marketing/newcastle.md
+      - comms_marketing/together_abroad.md
 
 defaults:
   - scope:

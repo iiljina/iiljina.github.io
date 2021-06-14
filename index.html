@@ -38,52 +38,28 @@ page_name: main
 {% include section.html section=sections.projects content=content %}
 
 {% capture content %}
-<div class="row">
-    <div class="col-4">
-        {% assign pms = site.jobs | where: "type", "project_management" %}
-        {% assign pms_gist = site.jobs | where: "type", "project_management_gist" | first %}
+<div class="row jobs">
+    {% assign types = "project_management, customer_service, comms_marketing" | split: ", " %}
+    {% assign types_title = "Project Management, Customer Service, Comms & Marketing" | split: ", " %}
+    {% for type in types %}
+    {% assign jobs = site.jobs | where: "type", type %}
+    <div class="col-4 col-12-small {{ type }}">
+        <h3>{{ types_title[forloop.index0] }}</h3>
 
-        <h3>{{ site.data.jobs["comms_marketing"].text }}</h3>
-        {% for p in pms %}
-        <h4>{{ p.when }} - {{ p.where }}</h4>
-        <p>
-            {{ p.content }}
-        </p>
+        {% assign jobs = site.jobs | where: "type", type %}
+        {% for job in jobs %}
+        <article class="item">
+            {% if job.logo %}
+            <img src="/static/jobs/{{ job.logo }}" alt="{{ job.title }}">
+            {% else %}
+            <h4>{{ job.title }}</h4>
+            {% endif %}
+            <h5>{{ job.subtitle }}</h5>
+            <p>{{ job.content | markdownify }}</p>
+        </article>
         {% endfor %}
-        <p>
-            {{ pms_gist.content }}
-        </p>
     </div>
-    <div class="col-4">
-        {% assign cust = site.jobs | where: "type", "customer_service" %}
-        {% assign cust_gist = site.jobs | where: "type", "customer_service_gist" | first %}
-
-        <h3>{{ site.data.jobs["customer_service"].text }}</h3>
-        {% for c in cust %}
-        <h4>{{ c.when }} - {{ c.where }}</h4>
-        <p>
-            {{ c.content }}
-        </p>
-        {% endfor %}
-        <p>
-            {{ cust_gist.content }}
-        </p>
-    </div>
-    <div class="col-4">
-        {% assign comms = site.jobs | where: "type", "comms_marketing" %}
-        {% assign comms_gist = site.jobs | where: "type", "comms_marketing_gist" | first %}
-
-        <h3>{{ site.data.jobs["comms_marketing"].text }}</h3>
-        {% for c in comms %}
-        <h4>{{ c.when }} - {{ c.where }}</h4>
-        <p>
-            {{ c.content }}
-        </p>
-        {% endfor %}
-        <p>
-            {{ comms_gist.content }}
-        </p>
-    </div>
+    {% endfor %}
 </div>
 {% endcapture %}
 {% include section.html section=sections.work content=content %}

@@ -1,5 +1,6 @@
 ---
-type: customer_service_gist
+title: 'I have learned to:'
+type: customer_service
 ---
 - Find a common language with every person
 - Understanding the core of a person's need

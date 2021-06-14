@@ -1,7 +1,7 @@
 ---
 title: Booking.com
-when: 06/2016 – 01/2017
-where: Amsterdam
+logo: booking.com.svg
+subtitle: 06/2016 – 01/2017, Amsterdam
 type: customer_service
 ---
 Effectively solved customers complaints and managed guests’ requests.

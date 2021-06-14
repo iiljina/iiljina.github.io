@@ -1973,6 +1973,71 @@
     }
 }
 
+.jobs {
+    margin-left: 0 !important;
+
+    > .project_management, > .customer_service, > .comms_marketing {
+        padding: _size(element-margin);
+    }
+
+    > .project_management {
+        background-color: #03989e;
+
+        border-top-left-radius: _size(border-radius);
+        border-bottom-left-radius: _size(border-radius);
+
+        @include breakpoint('<=small') {
+            border-left: solid 1px _palette(border3);
+            border-top-right-radius: _size(border-radius);
+            border-bottom-left-radius: 0;
+        }
+
+        h3, h4, h5, p, ul {
+            color: #fff;
+        }
+    }
+    > .customer_service {
+        background-color: #fadb7c;
+
+        border: 0 none;
+
+        img {
+            padding: 0;
+        }
+    }
+    > .comms_marketing {
+        background-color: #fff;
+
+        border: solid 1px _palette(border3);
+        border-left: 0 none;
+        border-top-right-radius: _size(border-radius);
+        border-bottom-right-radius: _size(border-radius);
+
+        @include breakpoint('<=small') {
+            border-left: solid 1px _palette(border3);
+            border-top-right-radius: 0;
+            border-bottom-left-radius: _size(border-radius);
+        }
+    }
+
+    .item {
+        img {
+            max-width: 70%;
+            margin-bottom: _size(element-margin);
+            padding: 5px;
+            background-color: #fff;
+            border-radius: _size(border-radius);
+        }
+
+        border-bottom: solid 1px _palette(border3);
+        margin-bottom: _size(element-margin);
+
+        &:last-child {
+            border: 0 none;
+        }
+    }
+}
+
 .gallery {
     a img {
         transition: _duration(transition);
