@@ -177,7 +177,7 @@
 	}
 
 	h3 {
-		font-size: 1.75em;
+		font-size: 1.5em;
 		line-height: 1.5em;
 	}
 
@@ -219,7 +219,7 @@
 	}
 
 	blockquote {
-		border-left: solid (_size(border-width) * 4) _palette(border2);
+		border-left: solid (_size(border-width) * 3) _palette(border2);
 		font-style: italic;
 		margin: 0 0 _size(element-margin) 0;
 		padding: 0.5em 0 0.5em 2em;
@@ -1133,7 +1133,7 @@
 			}
 
 			&:active {
-				background-color: _palette(border3-bg);
+				background-color: _palette(border-bg);
 			}
 
 			&.icon {
@@ -1941,11 +1941,140 @@
     }
 }
 
+.basic {
+	background-color: _palette(bg);
+	color: _palette(fg);
+	&, blockquote {
+	    border-color: _palette(border);
+	}
+	h1, h2, h3, h4, h5, h6, strong, em {
+		color: _palette(fg-bold);
+	}
+}
+
+.yellow {
+	background-color: _palette(yellow, bg);
+	color: _palette(yellow, fg);
+	&, blockquote {
+		border-color: _palette(yellow, border);
+	}
+	h1, h2, h3, h4, h5, h6, strong, em, a {
+		color: _palette(yellow, fg-bold);
+	}
+}
+
+.pink {
+	background-color: _palette(pink, bg);
+	color: _palette(pink, fg);
+	&, blockquote {
+		border-color: _palette(pink, border);
+	}
+	h1, h2, h3, h4, h5, h6, strong, em, a {
+		color: _palette(pink, fg-bold);
+	}
+}
+
+.orange {
+	background-color: _palette(orange, bg);
+	color: _palette(orange, fg);
+	&, blockquote {
+		border-color: _palette(orange, border);
+	}
+	h1, h2, h3, h4, h5, h6, strong, em, a {
+		color: _palette(orange, fg-bold);
+	}
+}
+
+.green {
+	background-color: _palette(green, bg);
+	color: _palette(green, fg);
+	&, blockquote {
+		border-color: _palette(green, border);
+	}
+	h1, h2, h3, h4, h5, h6, strong, em, a {
+		color: _palette(green, fg-bold);
+	}
+}
+
+.white {
+	background-color: _palette(white, bg);
+	color: _palette(white, fg);
+	&, blockquote {
+		border-color: _palette(white, border);
+	}
+	h1, h2, h3, h4, h5, h6, strong, em, a {
+		color: _palette(white, fg-bold);
+	}
+}
+
+
+.first-column-borders {
+    border-top-left-radius: _size(border-radius);
+    border-bottom-left-radius: _size(border-radius);
+
+    @include breakpoint('<=small') {
+        border-left: solid 1px;
+        border-top-right-radius: _size(border-radius);
+        border-bottom-left-radius: 0;
+    }
+}
+
+.middle-column-borders {
+    border: 0 none;
+}
+
+.last-column-borders {
+    border: solid 1px;
+    border-left: 0 none;
+    border-top-right-radius: _size(border-radius);
+    border-bottom-right-radius: _size(border-radius);
+
+    @include breakpoint('<=small') {
+        border-top: 0;
+        border-left: solid 1px;
+        border-top-right-radius: 0;
+        border-bottom-left-radius: _size(border-radius);
+    }
+}
+
+.first-row-borders {
+    border: solid 1px;
+    border-bottom: 0 none;
+    border-top-left-radius: _size(border-radius);
+    border-top-right-radius: _size(border-radius);
+
+    @include breakpoint('<=small') {
+        border-left: solid 1px;
+        border-top-right-radius: _size(border-radius);
+        border-bottom-left-radius: 0;
+    }
+}
+
+.middle-row-borders {
+    border: 0 none;
+    border-left: solid 1px;
+    border-right: solid 1px;
+}
+
+.last-row-borders {
+    border: solid 1px;
+    border-top: 0 none;
+    border-bottom-left-radius: _size(border-radius);
+    border-bottom-right-radius: _size(border-radius);
+
+    @include breakpoint('<=small') {
+
+        border-left: solid 1px;
+        border-top-right-radius: 0;
+        border-bottom-left-radius: _size(border-radius);
+    }
+}
+
 .projects {
     .item {
         margin-bottom: _size(element-margin);
         img {
-            border: solid 1px _palette(border3);
+            border: solid 1px _palette(border);
             border-bottom: 0 none;
             border-radius: _size(border-radius) _size(border-radius) 0 0;
         }
@@ -1953,7 +2082,7 @@
         .inner {
             background: _palette(bg);
             padding: _size(element-margin) 0;
-            border: solid 1px _palette(border3);
+            border: solid 1px _palette(border);
             border-top: 0 none;
             border-radius: 0 0 _size(border-radius) _size(border-radius);
             text-align: center;
@@ -1981,43 +2110,20 @@
     }
 
     > .project_management {
-        background-color: #03989e;
-
-        border-top-left-radius: _size(border-radius);
-        border-bottom-left-radius: _size(border-radius);
-
-        @include breakpoint('<=small') {
-            border-left: solid 1px _palette(border3);
-            border-top-right-radius: _size(border-radius);
-            border-bottom-left-radius: 0;
-        }
-
-        h3, h4, h5, p, ul {
-            color: #fff;
-        }
+       	@extend .green;
+        @extend .first-column-borders;
     }
     > .customer_service {
-        background-color: #fadb7c;
-
-        border: 0 none;
+		@extend .yellow;
+        @extend .middle-column-borders;
 
         img {
             padding: 0;
         }
     }
     > .comms_marketing {
-        background-color: #fff;
-
-        border: solid 1px _palette(border3);
-        border-left: 0 none;
-        border-top-right-radius: _size(border-radius);
-        border-bottom-right-radius: _size(border-radius);
-
-        @include breakpoint('<=small') {
-            border-left: solid 1px _palette(border3);
-            border-top-right-radius: 0;
-            border-bottom-left-radius: _size(border-radius);
-        }
+		@extend .white;
+		@extend .last-column-borders;
     }
 
     .item {
@@ -2025,17 +2131,41 @@
             max-width: 70%;
             margin-bottom: _size(element-margin);
             padding: 5px;
-            background-color: #fff;
+            background-color: _palette(bg);;
             border-radius: _size(border-radius);
         }
 
-        border-bottom: solid 1px _palette(border3);
+        border-bottom: solid 1px;
         margin-bottom: _size(element-margin);
 
         &:last-child {
             border: 0 none;
         }
     }
+}
+
+.testimonials {
+    &.row {
+        padding: _size(element-margin);
+		margin-left: 0 !important;
+    }
+	&.events {
+		@extend .yellow;
+        @extend .first-row-borders;
+        border: 0 none;
+	}
+	&.cowork {
+	    @extend .white;
+        @extend .middle-row-borders;
+	}
+	&.proposals {
+		@extend .pink;
+		@extend .last-row-borders;
+		border: 0 none;
+	}
+	> .item:not(:last-child) {
+		margin-bottom: _size(element-margin);
+	}
 }
 
 .gallery {

@@ -10,6 +10,17 @@ collections:
       - Glastonbury_Close_Circle_Proposal.md
       - 16th_Bday_Party_Proposal.md
   testimonials:
+    order:
+      - alexandra_svalova.md
+      - clare_lawrence_proposal_bday.md
+      - clare_lawrence_proposal_glastonbury.md
+      - clare_lawrence_proposal_tour.md
+      - clare_lawrence_tour.md
+      - ewa_kulesha.md
+      - participants_virtual_tour.md
+      - sophie_hamburger.md
+      - yuliia_kovalenko.md
+
   jobs:
     order:
       - project_management/attached.md

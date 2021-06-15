@@ -31,10 +31,11 @@
 // Palette.
 	$palette: (
 		pink: (
-			bg: #ee6262,
+			bg: rgba(238, 98, 98, 0.7),
 			bg-light: rgba(238, 98, 98, 0.7),
 			fg: #295881,
 			fg-bold: #182153,
+			border: rgba(24, 33, 83, 0.25),
 		),
 
 		yellow: (
@@ -42,6 +43,7 @@
 			bg-light: rgba(250, 219, 124, 0.7),
 			fg: #182153,
 			fg-bold: #295881,
+			border: rgba(41, 88, 129, 0.25),
 		),
 
 		orange: (
@@ -49,6 +51,7 @@
 			bg-light: rgba(255, 140, 98, 0.7),
 			fg: #182153,
 			fg-bold: #295881,
+			border: rgba(41, 88, 129, 0.25),
 		),
 
 		// <green>
@@ -57,6 +60,7 @@
 			bg-light: rgba(3, 152, 158, 0.7),
 			fg: #f1f1f1,
 			fg-bold: #ffffff,
+			border: rgba(255, 255, 255, 0.25),
 		),
 
 			accent1: (
@@ -80,7 +84,8 @@
 			bg: #ffffff,
 			bg-light: rgba(255, 255, 255, 0.7),
 			fg: #295881,
-			fg-bold: #2f2e2e
+			fg-bold: #182153,
+			border: #e0e0e0,
 		),
 
 			bg:					rgba(255, 255, 255, 0.95),
@@ -93,8 +98,6 @@
 		border-bg:			#fafafa,
 		border2:			#e4e4e4,
 		border2-bg:			#f4f4f4,
-		border3:			#e0e0e0,
-		border3-bg:			#eaeaea,
 
 		accent2: (
 			bg:				#989898,

@@ -42,7 +42,6 @@ page_name: main
     {% assign types = "project_management, customer_service, comms_marketing" | split: ", " %}
     {% assign types_title = "Project Management, Customer Service, Comms & Marketing" | split: ", " %}
     {% for type in types %}
-    {% assign jobs = site.jobs | where: "type", type %}
     <div class="col-4 col-12-small {{ type }}">
         <h3>{{ types_title[forloop.index0] }}</h3>
 
@@ -70,21 +69,24 @@ Skills
 {% include section.html section=sections.skills content=content %}
 
 {% capture content %}
-{% for testimonial in site.testimonials %}
-{% assign testimonial_type = site.data.testimonials[testimonial.type] %}
-<div class="row">
-    <blockquote>
-        <p>{{ testimonial.content }}</p>
-        <div class="sender">
-            <a href="#" class="send-right button alt small icon solid {{ testimonial_type.icon }}">
-                More from {{ testimonial_type.text }}
-            </a>
-        </div>
-        <em>
-            {{ testimonial.who }} <br>
-            {{ testimonial.where }}
-        </em>
-    </blockquote>
+{% assign types = "events, cowork, proposals" | split: ", " %}
+{% assign types_title = "Events, Working with me, Events Proposals" | split: ", " %}
+{% for type in types %}
+<div class="row testimonials {{ type }}">
+    <div class="col-12">
+        <h3>{{ types_title[forloop.index0] }}</h3>
+    </div>
+
+    {% assign testimonials = site.testimonials | where: "type", type %}
+    {% for testimonial in testimonials %}
+    <div class="col-4 col-12-small {{ type }} item">
+        <blockquote>{{ testimonial.content }}</blockquote>
+            <em>
+                {{ testimonial.who }} <br/>
+                {{ testimonial.where }}
+            </em>
+    </div>
+    {% endfor %}
 </div>
 {% endfor %}
 {% endcapture %}
