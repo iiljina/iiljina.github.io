@@ -30,10 +30,65 @@
 
 // Palette.
 	$palette: (
-		bg:					rgba(255, 255, 255, 0.95),
-		fg:					#888,
-		fg-bold:			#777,
-		fg-light:			#aaa,
+		pink: (
+			bg: #ee6262,
+			bg-light: rgba(238, 98, 98, 0.7),
+			fg: #295881,
+			fg-bold: #182153,
+		),
+
+		yellow: (
+			bg: #fadb7c,
+			bg-light: rgba(250, 219, 124, 0.7),
+			fg: #182153,
+			fg-bold: #295881,
+		),
+
+		orange: (
+			bg: #ff8c62,
+			bg-light: rgba(255, 140, 98, 0.7),
+			fg: #182153,
+			fg-bold: #295881,
+		),
+
+		// <green>
+		green: (
+			bg: #03989e,
+			bg-light: rgba(3, 152, 158, 0.7),
+			fg: #f1f1f1,
+			fg-bold: #ffffff,
+		),
+
+			accent1: (
+				bg:				#03989e,
+				fg-bold:		#ffffff,
+				fg:				mix(#03989e, #ffffff, 25%),
+				fg-light:		mix(#03989e, #ffffff, 40%)
+			),
+
+			header: (
+				bg: 			rgba(3, 152, 158, 0.95),
+				fg-bold:		#ffffff,
+				fg:				mix(#03989e, #ffffff, 25%),
+				fg-light:		mix(#03989e, #ffffff, 40%),
+				border:			mix(#03989e, #ffffff, 90%)
+			),
+		// </green>
+
+		// <white>
+		white: (
+			bg: #ffffff,
+			bg-light: rgba(255, 255, 255, 0.7),
+			fg: #295881,
+			fg-bold: #2f2e2e
+		),
+
+			bg:					rgba(255, 255, 255, 0.95),
+			fg:					#295881,
+			fg-bold: 			#214868,
+			fg-light:			#aaa,
+		// </white>
+
 		border:				#f4f4f4,
 		border-bg:			#fafafa,
 		border2:			#e4e4e4,
@@ -41,25 +96,10 @@
 		border3:			#e0e0e0,
 		border3-bg:			#eaeaea,
 
-		accent1: (
-			bg:				#4acaa8,
-			fg-bold:		#ffffff,
-			fg:				mix(#4acaa8, #ffffff, 25%),
-			fg-light:		mix(#4acaa8, #ffffff, 40%)
-		),
-
 		accent2: (
 			bg:				#989898,
 			fg-bold:		#ffffff,
 			fg:				mix(#989898, #ffffff, 25%),
 			fg-light:		mix(#989898, #ffffff, 40%)
 		),
-
-		header: (
-			bg: 			rgba(74, 202, 168, 0.95), //#4acaa8 + 5% opacity
-			fg-bold:		#ffffff,
-			fg:				mix(#4acaa8, #ffffff, 25%),
-			fg-light:		mix(#4acaa8, #ffffff, 40%),
-			border:			mix(#4acaa8, #ffffff, 90%)
-		)
-	);
+	)
