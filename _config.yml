@@ -9,6 +9,7 @@ collections:
       - Bla-Bla-language-Cafe.md
       - Glastonbury_Close_Circle_Proposal.md
       - 16th_Bday_Party_Proposal.md
+
   testimonials:
     order:
       - alexandra_svalova.md
@@ -32,6 +33,16 @@ collections:
       - comms_marketing/do_teacher_training.md
       - comms_marketing/newcastle.md
       - comms_marketing/together_abroad.md
+
+  hobbies:
+    order:
+      - text.md
+      - travelling.md
+      - active.md
+      - social_dances.md
+      - boardgames.md
+      - museums.md
+      - recipes.md
 
 defaults:
   - scope:

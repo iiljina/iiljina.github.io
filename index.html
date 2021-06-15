@@ -93,7 +93,23 @@ Skills
 {% include section.html section=sections.testimonials content=content %}
 
 {% capture content %}
-Hobbies
+<div class="row hobbies">
+    {% for hobby in site.hobbies %}
+    <div class="{{ hobby.size }} item">
+        {% if hobby.image %}
+        <span class="image">
+            <img src="/static/hobbies/{{ hobby.image }}" alt="{{ hobby.title }}">
+            {% if hobby.title %}
+            <span class="title">{{ hobby.title }}</span>
+            {% endif %}
+        </span>
+        {% endif %}
+        {% if hobby.content %}
+        {{ hobby.content | markdownify }}
+        {% endif %}
+    </div>
+    {% endfor %}
+</div>
 {% endcapture %}
 {% include section.html section=sections.hobbies content=content %}
 

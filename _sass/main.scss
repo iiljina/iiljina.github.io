@@ -2168,6 +2168,27 @@
 	}
 }
 
+.hobbies {
+    @extend .yellow;
+    @extend .first-row-borders;
+    @extend .last-row-borders;
+    border-top-right-radius: _size(border-radius);
+
+    border: 0 none;
+    padding: _size(element-margin);
+    margin-left: 0 !important;
+
+    .item {
+        text-align: center;
+        padding-bottom: _size(element-margin);
+
+        .image img {
+            margin: 0 auto _size(element-margin);
+            max-width: 100px;
+        }
+    }
+}
+
 .gallery {
     a img {
         transition: _duration(transition);
