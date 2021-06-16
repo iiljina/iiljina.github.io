@@ -1,5 +1,5 @@
 ---
-title: Let's talk
+title: Let's talk!
 ---
-After successfully completing a very practical Postgraduate Diploma course in Event Management, 
-I am eager to apply my passion, skills and fresh knowledge to my next adventure in Events. (delete it) - add CV?? or they can see it in Linked in
+If you think that my skills, experience and attitude might be beneficial for your event, company or idea, let's talk!<br/>
+If you are interested in a collaboration or have any question, just drop me a message :) 

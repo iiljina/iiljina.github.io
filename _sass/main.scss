@@ -1427,7 +1427,7 @@
 			#main {
 				> section {
 					> .container {
-						padding: 4em 0 2em 0;
+						padding: 2em 0 2em 0;
 					}
 				}
 			}
@@ -2122,8 +2122,9 @@
         }
     }
     > .comms_marketing {
-		@extend .white;
+		@extend .orange;
 		@extend .last-column-borders;
+		border: 0 none;
     }
 
     .item {
@@ -2196,7 +2197,7 @@
     border-top-right-radius: _size(border-radius);
     border: 0 none;
 
-    background: radial-gradient(circle at center, white 0, rgba(91, 190, 134, 0.5) 100%);
+    background: radial-gradient(circle at center, white 0, rgba(3, 152, 158, 0.5) 100%);
 	.inner {
 		background: url('/images/bubble_bg.svg') no-repeat;
 		padding: _size(element-margin);

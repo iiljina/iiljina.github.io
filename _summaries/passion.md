@@ -1,4 +1,4 @@
 ---
 title: Passion
 ---
-Being a happy and positive person, I love bringing happiness to others through exciting experiences that amaze, inspire, unite.
+Being a happy and positive person, I love bringing happiness to others through exciting experiences that amaze, inspire, unite, and thus make a positive impact.

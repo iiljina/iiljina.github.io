@@ -1,6 +1,5 @@
 ---
-title: Mission
+title: Action
 ---
-If you think that my skills/experience/attitude might be beneficial for your event, company or idea, just drop me a message :)
-
-If you are interested in a collaboration or have any question, just drop me a message :) add linked in, what's up item with phone, email icon with email
+After successfully completing a very practical Postgraduate Diploma course in Event Management, 
+I am eager to apply my passion, skills and fresh knowledge to a new adventure in my favourite industry - the Events. 

@@ -1,6 +1,7 @@
 ---
 name: blablacafe
-title: Bla Bla Language Caffe
+title: Bla Bla Language Cafe
+list_title: Bla Bla Language Cafe
 gist: Amsterdam, August - October 2020
 permalink: /projects/bla-bla
 folder: /static/projects/Bla-Bla

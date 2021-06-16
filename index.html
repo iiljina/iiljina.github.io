@@ -7,8 +7,7 @@ page_name: main
 {% assign sections = page_data.sections %}
 
 {% capture content %}
-<p>I am happy you came to learn mor about the events I organised, proposals developed, my experiences, skills, hobbies,
-    and testimonials.</p>
+<p>{{ site.data.me.hello_text }}</p>
 {% endcapture %}
 {% include section.html major=true section=sections.top content=content %}
 
@@ -27,7 +26,7 @@ page_name: main
                 <img src="{{project.folder}}/{{ project.image }}" alt="{{ project.title }}"/>
 
                 <div class="inner">
-                    <h5>{{ project.title }}</h5>
+                    <h5>{{ project.list_title }}</h5>
                 </div>
             </a>
         </article>
@@ -66,7 +65,7 @@ page_name: main
 
 {% capture content %}
 {% assign types = "events, cowork, proposals" | split: ", " %}
-{% assign types_title = "Events, Working with me, Events Proposals" | split: ", " %}
+{% assign types_title = "My Events, Working with Me, My Event Proposals" | split: ", " %}
 {% for type in types %}
 <div class="row testimonials {{ type }}">
     <div class="col-12">

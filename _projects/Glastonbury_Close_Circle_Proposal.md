@@ -1,6 +1,7 @@
 ---
 name: glastonbury
-title: Glastonbury, Close Circle
+title: Glastonbury, Close Circle - Proposal
+list_title: Glastonbury, Close Circle - Proposal
 gist: February - May 2020
 permalink: /projects/Glastonbury-Close-Circle-Proposal
 folder: /static/projects/Glastonbury-Close-Circle

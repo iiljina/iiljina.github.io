@@ -1,6 +1,7 @@
 ---
 name: bday
-title: 16th Birthday Party
+title: 16th Birthday Party - Proposal
+list_title: 16th Birthday Party - Proposal
 gist: October - December 2019
 folder: /static/projects/16th_Birthday_party
 image: banner.png

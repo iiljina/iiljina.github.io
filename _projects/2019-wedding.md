@@ -1,9 +1,11 @@
 ---
 name: wedding
 title: Travel-Themed Wedding
+list_title: Travel-Themed Wedding
 gist: Riga, Latvia - August 2019
 folder: /static/projects/2019-wedding/images
 image: banner.jpg
+permalink: /projects/2019-wedding
 ---
 
 {% include menu.md %}
