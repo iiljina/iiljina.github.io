@@ -2173,8 +2173,8 @@
     @extend .first-row-borders;
     @extend .last-row-borders;
     border-top-right-radius: _size(border-radius);
-
     border: 0 none;
+
     padding: _size(element-margin);
     margin-left: 0 !important;
 
@@ -2187,6 +2187,20 @@
             max-width: 100px;
         }
     }
+}
+
+.summaries {
+    @extend .white;
+    @extend .first-row-borders;
+    @extend .last-row-borders;
+    border-top-right-radius: _size(border-radius);
+    border: 0 none;
+
+    background: radial-gradient(circle at center, white 0, rgba(91, 190, 134, 0.5) 100%);
+	.inner {
+		background: url('/images/bubble_bg.svg') no-repeat;
+		padding: _size(element-margin);
+	}
 }
 
 .gallery {

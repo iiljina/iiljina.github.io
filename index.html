@@ -114,6 +114,17 @@ Skills
 {% include section.html section=sections.hobbies content=content %}
 
 {% capture content %}
-Summary
+<div class="summaries">
+    <div class="inner">
+        {% for summary in site.summaries %}
+        <div class="row">
+            <div class="col-2 col-12-small">
+                <h3>{{ summary.title }}</h3>
+            </div>
+            <div class="col-10 col-12-small">{{ summary.content | markdownify }}</div>
+        </div>
+        {% endfor %}
+    </div>
+</div>
 {% endcapture %}
 {% include section.html section=sections.summary content=content %}
