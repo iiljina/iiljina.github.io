@@ -1,5 +1,5 @@
 ---
-page_name: project.intsoc
+name: intsoc
 title: International Society's Events
 gist: Newcastle University, UK - 09/2012 - 05/ 2014
 folder: /static/projects/IntSoc
@@ -14,9 +14,9 @@ I really enjoyed the community we created and expanded with a small but enthusia
 
 In my third year in the Society, I was asked to become the Society's president. At the end of that year, I was one of the five students shortlisted in the Society Officer of the Year category of the ncl+ Extra-Curricular Activity Awards competition.
 
-"The amount of work, effort and passion she has put into IntSoc Newcastle is unbelievable! And it made us the incredible organisation and community we are today!"
+> The amount of work, effort and passion she has put into IntSoc Newcastle is unbelievable! And it made us the incredible organisation and community we are today!
 
-Alex Svalova, IntSoc Secretary 09/2013-05/2014
+**Alex Svalova**, IntSoc Secretary 09/2013&nbsp;-&nbsp;05/2014
 
 {% include image_row.html
     gallery="images"

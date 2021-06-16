@@ -1,5 +1,5 @@
 ---
-page_name: project.blablacafe
+name: blablacafe
 title: Bla Bla Language Caffe
 gist: Amsterdam, August - October 2020
 permalink: /projects/bla-bla
