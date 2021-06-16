@@ -32,8 +32,8 @@ I presented my event's concept and the main event attributes in the short enthus
 _Note: I pitch as from my own (imaginary) event agency._
 {% endcapture %}
 {% include text_row.html 
-    text1=video size1="three-quarters"
-    text2=video_note size2="one-quarter"
+    text1=video size1="three-quarters full-small"
+    text2=video_note size2="one-quarter full-small"
 %}
 
 ### Results and Feedback
