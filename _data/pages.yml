@@ -19,14 +19,14 @@ main:
       title: 'Other Work Experiences / Not only Events'
       menu_title: 'Other work experiences'
       icon: fa-briefcase
-    skills:
-      name: 'skills'
-      title: 'Events Skills Proved'
-      menu_title: 'Skills'
-      icon: fa-award
-      gist: >-
-        I've been involved in vaiour work experiences, where I shows and developer the most essential skills for a successful event manager.
-        Here I have connected the skills with my work and event experiences.
+#    skills:
+#      name: 'skills'
+#      title: 'Events Skills Proved'
+#      menu_title: 'Skills'
+#      icon: fa-award
+#      gist: >-
+#        I've been involved in vaiour work experiences, where I shows and developer the most essential skills for a successful event manager.
+#        Here I have connected the skills with my work and event experiences.
     testimonials:
       name: 'testimonials'
       title: 'Feedback and Testimonials'
