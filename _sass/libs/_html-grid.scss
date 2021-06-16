@@ -111,6 +111,36 @@
 							> .off-#{$i}#{$suffix} {
 								margin-left: $unit * $i;
 							}
+
+    // 						custom names
+                            > .one-sixth#{$suffix}, > .off-one-sixth#{$suffix} {
+                                width: $unit * $cols / 6;
+                            }
+
+                            > .one-quarter#{$suffix}, > .off-one-quarter#{$suffix} {
+                                width: $unit * $cols / 4;
+                            }
+
+                            > .three-quarters#{$suffix}, > .off-three-quarters#{$suffix} {
+                                width: $unit * $cols * 3 / 4;
+                            }
+
+                            > .one-third#{$suffix}, > .off-one-third#{$suffix} {
+                                width: $unit * $cols / 3;
+                            }
+
+                            > .two-thirds#{$suffix}, > .off-two-thirds#{$suffix} {
+                                width: $unit * $cols * 2 / 3;
+                            }
+
+                            > .half#{$suffix}, > .off-half#{$suffix} {
+                                width: $unit * $cols / 2;
+                            }
+
+                            > .full#{$suffix}, > .off-full#{$suffix} {
+                                width: $unit * $cols;
+                            }
+    // 						custom names
 						}
 
 					// Step through multipliers.

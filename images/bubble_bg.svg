@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg">
+    <circle stroke="#ffedaf" fill="#ffedaf" r="200" cy="200" cx="100" />
+    <circle stroke="#ffedaf" fill="#ffedaf" r="225" cy="500" cx="600" />
+    <circle stroke="#ffedaf" fill="#ffedaf" r="250" cy="300" cx="1300" />
+    <circle stroke="#ffedaf" fill="#ffedaf" r="175" cy="1000" cx="50" />
+
+    <circle stroke="#ff914c" fill="#ff914c" r="10" cy="50" cx="150" />
+    <circle stroke="#ff914c" fill="#ff914c" r="20" cy="300" cx="100" />
+    <circle stroke="#ff914c" fill="#ff914c" r="30" cy="400" cx="700" />
+    <circle stroke="#ff914c" fill="#ff914c" r="40" cy="700" cx="400" />
+
+    <circle stroke="#ee6261" fill="#ee6261" r="5" cy="80" cx="300" />
+    <circle stroke="#ee6261" fill="#ee6261" r="15" cy="40" cx="450" />
+    <circle stroke="#ee6261" fill="#ee6261" r="25" cy="500" cx="800" />
+    <circle stroke="#ee6261" fill="#ee6261" r="35" cy="250" cx="150" />
+
+    <circle stroke="#ffde59" fill="#ffde59" r="15" cy="300" cx="900" />
+    <circle stroke="#ffde59" fill="#ffde59" r="25" cy="240" cx="730" />
+    <circle stroke="#ffde59" fill="#ffde59" r="35" cy="330" cx="240" />
+    <circle stroke="#ffde59" fill="#ffde59" r="45" cy="30" cx="456" />
+</svg>

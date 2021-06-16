@@ -1,0 +1,21 @@
+<section id="{{ include.section.name }}">
+    <div class="container">
+        {% if include.major %}
+        <header class="major">
+        {% endif %}
+
+            {% if include.section.title %}
+            <h2>{{ include.section.title }}</h2>
+            {% endif %}
+
+            {% if include.section.gist %}
+            <p>{{ include.section.gist }}</p>
+            {% endif %}
+
+            {{ include.content }}
+
+        {% if include.major %}
+        </header>
+        {% endif %}
+    </div>
+</section>

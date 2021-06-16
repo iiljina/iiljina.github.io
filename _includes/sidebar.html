@@ -1,0 +1,74 @@
+<section id="header">
+
+    <header>
+        <a href="/" class="image avatar"><img src="/images/avatar.jpg" alt=""/></a>
+        <h1 id="logo">{{ site.data.me.name }} {{ site.data.me.lastname }}</h1>
+        <p>{{ site.data.me.role }}</p>
+    </header>
+
+    <nav id="nav">
+        <ul>
+            {% assign page_data = site.data.pages[page.page_name] %}
+
+            {% if page_data %}
+                {% for sections_hash in page_data.sections %}
+                    {% assign section = sections_hash[1] %}
+                    {% if section.menu_title %}
+                        <li>
+                            <a href="#{{ section.name }}" id="{{ section.name }}-link">
+                                <span class="icon solid {{ section.icon }}"></span>
+                                {{ section.menu_title }}
+                            </a>
+                        </li>
+                    {% endif %}
+                {% endfor %}
+            {% else %}
+            <li>
+                <a id="home-link" href="/">
+                    <span class="icon solid fa-home"></span>
+                    Go back to main page
+                </a>
+            </li>
+            <li>
+                <a id="{{ page.name }}-link" href="#{{ page.name }}" class="always-active">
+                    <span class="icon solid fa-file"></span>
+                    {{ page.title }}
+                </a>
+            </li>
+            {% endif %}
+        </ul>
+    </nav>
+
+    <footer>
+        <ul class="icons">
+<!--            <li><a href="#" class="icon brands fa-twitter" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"><span class="label">Twitter</span></a></li>-->
+            <li>
+                <a id="facebookje" href="#" class="icon brands fa-facebook" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">
+                    <span class="label">Facebook</span>
+                </a>
+                <script>
+                    setTimeout(function(){
+                        document.getElementById("facebookje").setAttribute("href", "https://www.facebook.com/" + {{ site.data.me.facebookje }});
+                    }, 2000);
+                </script>
+            </li>
+            <li>
+                <a href="{{ site.data.me.linkedin }}" class="icon brands fa-linkedin" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">
+                    <span class="label">LinkedIn</span>
+                </a>
+            </li>
+<!--            <li><a href="#" class="icon brands fa-github" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"><span class="label">Github</span></a></li>-->
+<!--            <li><a href="#" class="icon brands fa-dribbble" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"><span class="label">Dribbble</span></a></li>-->
+            <li>
+                <a id="mailtje" href="#" class="icon solid fa-envelope" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">
+                    <span class="label">Email</span>
+                </a>
+                <script>
+                    setTimeout(function(){
+                        document.getElementById("mailtje").setAttribute("href", "mailto:" + {{ site.data.me.mailtje }});
+                    }, 2000);
+                </script>
+            </li>
+        </ul>
+    </footer>
+</section>

@@ -1,0 +1,5 @@
+<span class="image {{ include.size }} {{ include.position }}">
+   <img src="{{ page.folder }}/{{ include.image }}" alt="{{ include.title }}"/>
+   {% if include.title %}<span class="title">{{ include.title }}</span>{% endif %}</span>
+{:class="not-real-paragraph"}
+<!-- this CSS is needed because Jekyll is stupid and thinks this is markdown when included from markdown, and then it wraps it with a p -->

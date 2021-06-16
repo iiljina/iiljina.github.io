@@ -1,0 +1,43 @@
+<div style="clear: both;"></div>
+<div class="box alt gallery">
+    <div class="row">
+        {% if include.image1 %}
+        <div class="{{ include.size1 }}">
+        {% include image_in_gallery.html
+            folder=page.folder image=include.image1
+            size=include.size1 title=include.title1
+            gallery=include.gallery
+        %}
+        </div>
+        {% endif %}
+        {% if include.image2 %}
+        <div class="{{ include.size2 }}">
+            {% include image_in_gallery.html
+            folder=page.folder image=include.image2
+            size=include.size2 title=include.title2
+            gallery=include.gallery
+            %}
+        </div>
+        {% endif %}
+        {% if include.image3 %}
+        <div class="{{ include.size3 }}">
+            {% include image_in_gallery.html
+            folder=page.folder image=include.image3
+            size=include.size3 title=include.title3
+            gallery=include.gallery
+            %}
+        </div>
+        {% endif %}
+        {% if include.image4 %}
+        <div class="{{ include.size4 }}">
+            {% include image_in_gallery.html
+            folder=page.folder image=include.image4
+            size=include.size4 title=include.title4
+            gallery=include.gallery
+            %}
+        </div>
+        {% endif %}
+
+    </div>
+</div>
+<div style="clear: both;"></div>

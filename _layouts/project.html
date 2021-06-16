@@ -1,7 +1,12 @@
 ---
 layout: default
 ---
-<h2>This is a single project page</h2>
 
-{{ content }}
+{% include section.html section=page major=true %}
+
+<section id="projects">
+    <div class="container">
+        {{ content | markdownify }}
+    </div>
+</section>
 

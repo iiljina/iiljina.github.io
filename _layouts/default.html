@@ -1,16 +1,20 @@
 <!DOCTYPE HTML>
 <html>
 <head>
-    <title>Read Only by HTML5 UP</title>
+    <title>{{ page.title }}</title>
     <meta charset="utf-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css"/>
     <link rel="stylesheet" href="/assets/css/styles.css"/>
+    <link rel="icon" type="image/svg+xml" href="/images/favicon.svg">
+    <link rel="alternate icon" href="/favicon.ico">
+    <link rel="mask-icon" href="/images/favicon.svg" color="#ee6261">
 </head>
 <body class="is-preload">
 
-{% include header.html %}
+{% include sidebar.html %}
 
-<div id="wrapper">
+<div id="wrapper" class="background">
 
     <div id="main">
 
@@ -21,12 +25,15 @@
 </div>
 
 <!-- Scripts -->
-<script src="/assets/js/jquery.min.js"></script>
-<script src="/assets/js/jquery.scrollex.min.js"></script>
+<script src="//code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+        crossorigin="anonymous"></script>
 <script src="/assets/js/jquery.scrolly.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery.scrollex/0.2.1/jquery.scrollex.min.js"></script>
 <script src="/assets/js/browser.min.js"></script>
 <script src="/assets/js/breakpoints.min.js"></script>
 <script src="/assets/js/util.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
 <script src="/assets/js/main.js"></script>
 
 </body>

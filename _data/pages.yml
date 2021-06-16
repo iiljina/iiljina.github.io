@@ -1,0 +1,46 @@
+main:
+  sections:
+    top:
+      name: 'top'
+      title: 'Hello!'
+      gist: >-
+        I create immersive experiences that amaze, inspire and unite.
+    projects:
+      name: 'projects'
+      title: 'Events and Proposals'
+      menu_title: 'Events and Proposals'
+      icon: fa-th
+      gist: >-
+        I put all my heart and efforts into every event and proposal (study projects) I do, and am fully committed to deliver the best possible result.<br/>
+        I enjoy developing an overarching event concept, where every detail complements the theme.<br/>
+        I align every detail to the big picture and the event’s goals and make sure the events are seamless and memorable.
+    work:
+      name: 'work'
+      title: 'Other Work Experiences / Not Only Events'
+      menu_title: 'Other Work Experiences'
+      icon: fa-briefcase
+#    skills:
+#      name: 'skills'
+#      title: 'Events Skills Proved'
+#      menu_title: 'Skills'
+#      icon: fa-award
+#      gist: >-
+#        I've been involved in various     work experiences, where I shows and developer the most essential skills for a successful event manager.
+#        Here I have connected the skills with my work and event experiences.
+    testimonials:
+      name: 'testimonials'
+      title: 'Feedback and Testimonials'
+      menu_title: 'Feedback and Testimonials'
+      icon: fa-comments
+    hobbies:
+      name: 'hobbies'
+      title: 'Hobbies'
+      menu_title: 'Hobbies'
+      icon: fa-hiking
+      gist: >-
+        Planning, socialising, being active and curious are in my DNA.
+    summary:
+      name: 'summary'
+      title: 'Let''s Talk'
+      menu_title: 'Let''s Talk'
+      icon: fa-smile-wink

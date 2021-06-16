@@ -1,6 +1,125 @@
 ---
-layout: default
-title: Main page
+title: Inna Iljina - Events Enthusiast
+page_name: main
 ---
 
+{% assign page_data = site.data.pages[page.page_name] %}
+{% assign sections = page_data.sections %}
 
+{% capture content %}
+<p>{{ site.data.me.hello_text }}</p>
+{% endcapture %}
+{% include section.html major=true section=sections.top content=content %}
+
+{% capture content %}
+<div class="row projects">
+    {% assign totalProjects = site.projects.size %}
+    {% assign items_per_col = totalProjects | divided_by: 3 %}
+    {% assign num_cols = totalProjects | divided_by: items_per_col | minus: 1 %}
+
+    {% for i in (0..num_cols) %}
+    <div class="col-4 col-12-small">
+        {% assign offset = i | times: items_per_col %}
+        {% for project in site.projects limit: items_per_col offset: offset %}
+        <article class="item">
+            <a href="{{ project.url }}" class="image fit">
+                <img src="{{project.folder}}/{{ project.image }}" alt="{{ project.title }}"/>
+
+                <div class="inner">
+                    <h5>{{ project.list_title }}</h5>
+                </div>
+            </a>
+        </article>
+        {% endfor %}
+    </div>
+    {% endfor %}
+</div>
+{% endcapture %}
+{% include section.html section=sections.projects content=content %}
+
+{% capture content %}
+<div class="row jobs">
+    {% assign types = "project_management, customer_service, comms_marketing" | split: ", " %}
+    {% assign types_title = "Project Management, Customer Service, Comms & Marketing" | split: ", " %}
+    {% for type in types %}
+    <div class="col-4 col-12-small {{ type }}">
+        <h3>{{ types_title[forloop.index0] }}</h3>
+
+        {% assign jobs = site.jobs | where: "type", type %}
+        {% for job in jobs %}
+        <article class="item">
+            {% if job.logo %}
+            <img src="/static/jobs/{{ job.logo }}" alt="{{ job.title }}">
+            {% else %}
+            <h4>{{ job.title }}</h4>
+            {% endif %}
+            <h5>{{ job.subtitle }}</h5>
+            <p>{{ job.content | markdownify }}</p>
+        </article>
+        {% endfor %}
+    </div>
+    {% endfor %}
+</div>
+{% endcapture %}
+{% include section.html section=sections.work content=content %}
+
+{% capture content %}
+{% assign types = "events, cowork, proposals" | split: ", " %}
+{% assign types_title = "My Events, Working with Me, My Event Proposals" | split: ", " %}
+{% for type in types %}
+<div class="row testimonials {{ type }}">
+    <div class="col-12">
+        <h3>{{ types_title[forloop.index0] }}</h3>
+    </div>
+
+    {% assign testimonials = site.testimonials | where: "type", type %}
+    {% for testimonial in testimonials %}
+    <div class="col-4 col-12-small {{ type }} item">
+        <blockquote>{{ testimonial.content }}</blockquote>
+            <em>
+                {{ testimonial.who }} <br/>
+                {{ testimonial.where }}
+            </em>
+    </div>
+    {% endfor %}
+</div>
+{% endfor %}
+{% endcapture %}
+{% include section.html section=sections.testimonials content=content %}
+
+{% capture content %}
+<div class="row hobbies">
+    {% for hobby in site.hobbies %}
+    <div class="{{ hobby.size }} item">
+        {% if hobby.image %}
+        <span class="image">
+            <img src="/static/hobbies/{{ hobby.image }}" alt="{{ hobby.title }}">
+            {% if hobby.title %}
+            <span class="title">{{ hobby.title }}</span>
+            {% endif %}
+        </span>
+        {% endif %}
+        {% if hobby.content %}
+        {{ hobby.content | markdownify }}
+        {% endif %}
+    </div>
+    {% endfor %}
+</div>
+{% endcapture %}
+{% include section.html section=sections.hobbies content=content %}
+
+{% capture content %}
+<div class="summaries">
+    <div class="inner">
+        {% for summary in site.summaries %}
+        <div class="row">
+            <div class="col-2 col-12-small">
+                <h3>{{ summary.title }}</h3>
+            </div>
+            <div class="col-10 col-12-small">{{ summary.content | markdownify }}</div>
+        </div>
+        {% endfor %}
+    </div>
+</div>
+{% endcapture %}
+{% include section.html section=sections.summary content=content %}

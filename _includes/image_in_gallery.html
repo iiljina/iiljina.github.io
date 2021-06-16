@@ -1,0 +1,11 @@
+<figure class="image fit">
+    {% capture url %}{{ include.folder }}/{{ include.image }}{% endcapture %}
+    <a data-fancybox="{{ include.gallery }}"
+       data-caption="{{ include.title }}"
+       href="{{ url }}">
+        <img src="{{ url }}"/>
+    </a>
+    <figcaption>
+        <h6>{{ include.title }}</h6>
+    </figcaption>
+</figure>

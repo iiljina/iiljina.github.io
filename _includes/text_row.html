@@ -1,0 +1,26 @@
+<div style="clear: both;"></div>
+<div class="box alt">
+    <div class="row">
+        {% if include.text1 %}
+        <div class="{{ include.size1 }}">
+            {{ include.text1 | markdownify }}
+        </div>
+        {% endif %}
+        {% if include.text2 %}
+        <div class="{{ include.size2 }}">
+            <p>{{ include.text2  | markdownify }}</p>
+        </div>
+        {% endif %}
+        {% if include.text3 %}
+        <div class="{{ include.size3 }}">
+            <p>{{ include.text3  | markdownify }}</p>
+        </div>
+        {% endif %}
+        {% if include.text4 %}
+        <div class="{{ include.size4 }}">
+            <p>{{ include.text4  | markdownify }}</p>
+        </div>
+        {% endif %}
+    </div>
+</div>
+<div style="clear: both;"></div>
