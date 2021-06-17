@@ -3,6 +3,7 @@ name: virtual_tour
 title: Interactive Virtual Tour
 list_title: Interactive Virtual Tour
 gist: February 2021 - Online
+permalink: /projects/virtual-tour
 folder: /static/projects/2021-virtual-tour
 image: virtual_tour_small.jpg
 ---

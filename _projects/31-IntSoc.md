@@ -3,6 +3,7 @@ name: intsoc
 title: International Student Society's Events
 list_title: Cultural Events, Socials and Trips
 gist: Newcastle University, UK - 09/2012 - 05/ 2014
+permalink: /projects/IntSoc
 folder: /static/projects/IntSoc
 image: banner.jpg
 ---

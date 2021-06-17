@@ -3,9 +3,9 @@ name: bday
 title: 16th Birthday Party - Proposal
 list_title: 16th Birthday Party - Proposal
 gist: October - December 2019
+permalink: /projects/16th-Birthday-Party-Proposal
 folder: /static/projects/16th_Birthday_party
 image: banner.png
-permalink: /projects/16th-Birthday-Party-Proposal
 ---
 
 {% include menu.md %}
