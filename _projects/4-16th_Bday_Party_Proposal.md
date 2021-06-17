@@ -62,8 +62,8 @@ While working on the proposal I have contacted all the real suppliers and the ve
 While creating the timeline, function sheet, budget I realised that I enjoy working on the essential event documents, as well as developing the floorplans. 
 You can find all the documents in the [Leave Behind][leave_behind].
 
-I've aligned every detail of the event to the event goals, theme and preferences of the audience. I've put all my heart in this project and trully enjoyed working on every creative and operational detail of it.
-Feel free to watch the recording of my pitch for this event proposal (above) and scroll through the Leave behind to merge into the Travel-themed party that I would be thrilled to organise in real life.
+I've aligned every detail of the event to the event goals, theme and preferences of the audience. I've put all my heart in this project and trully enjoyed working on every creative and operational detail of it.<br/>
+Feel free to watch the recording of my pitch for this event proposal (above) and scroll through the [Leave Behind][leave_behind] to merge into the Travel-themed party that I would be thrilled to organise in real life.
 
 {% include image_row.html
     image1="pitch2.png" size1="half"

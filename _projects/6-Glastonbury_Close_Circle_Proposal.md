@@ -17,7 +17,7 @@ include image.html
     position="left" 
 %}
 
-As a first group project of the Event Management Postgraduate course, we had to come up witha  side event at glastonbury Festival, which would bring the artists closer to the audience. 
+As a first group project of the Event Management Postgraduate course, we had to come up with a side event at Glastonbury Festival, which would bring the artists closer to the audience. 
 We developed and proposed a concept of a living room concert, inviting the audience to step into the world of the artist and join his or her close circle.
 
 I massively enjoyed developing Close Circle concept while working on the production plan and details, social media plan and event evaluation, 
