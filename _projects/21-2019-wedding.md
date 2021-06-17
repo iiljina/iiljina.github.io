@@ -21,7 +21,7 @@ A non-typical wedding, representing the bride and groom, and especially their pa
 
 I came up with so many travel-related details starting from decoration and name cards to ceremony's style and cake design, which has created a very special atmosphere and resulted in a personal, very memorable experience for every guest and even exceeded the expectations of the bride(me) and groom.
 
-I've coordinated most of the preparation remotely, coming form Amsterdam to Latvia a few times for site visits and meetings with vendors.
+I've coordinated most of the preparation remotely, coming from Amsterdam to Latvia a few times for site visits and meetings with vendors.
 
 Get a glimpse of that special wedding yourself. Check the details below :)
 
@@ -44,27 +44,29 @@ Each table was decorated in the style of the most distinctive country or region 
 
 - The Caribbean table was decorated with cocos shells and exotic flowers in a pineapple.
 
+- Alpine Table even had real ski next to it and freshly cut pine branches.
+
 All my ideas for flower compositions were throughout discussed with the florist, who was happy to create a non-standard wedding decor (incl. Asian Ikebana, alpine horn, flowers in a pineapple)
 
 {% include image_row.html
     gallery="tables-images"
      
-    image1="wedding-288.jpg" size1="half" title1="Title 1"
-    image2="wedding-314.jpg" size2="one-quarter" title2="Title 2"
-    image3="wedding-313.jpg" size3="one-quarter" title3="Title 3"
+    image1="wedding-288.jpg" size1="half" title1="Amsterdam Table"
+    image2="wedding-314.jpg" size2="one-quarter" title2="Vietnamese Table"
+    image3="wedding-313.jpg" size3="one-quarter" title3="Vietnamese Table"
 %}
 {% include image_row.html
     gallery="tables-images"
      
-    image1="wedding-303_edited.jpg" size1="one-third" title1="Title 1"
-    image2="wedding-308.jpg" size2="one-third" title2="Title 2"
-    image3="wedding-316_edited.jpg" size3="one-third" title3="Title 3"
+    image1="wedding-303_edited.jpg" size1="one-third" title1="Russian Table"
+    image2="wedding-308.jpg" size2="one-third" title2="Russian Table"
+    image3="wedding-316_edited.jpg" size3="one-third" title3="Caribbean Table"
 %}
 {% include image_row.html
     gallery="tables-images"
      
-    image1="wedding-300.jpg" size1="one-third" title1="Title 1"
-    image3="wedding-298_edited.jpg" size3="two-thirds" title3="Title 3"
+    image1="wedding-300.jpg" size1="one-third" title1="Alpine Table"
+    image3="wedding-298_edited.jpg" size3="two-thirds" title3="Alpine Table"
 %}
 
 ### Name Cards with a Meaning
@@ -79,8 +81,8 @@ Postcards inside envelopes are corresponding to the table-country.
 {% include image_row.html
     gallery="names-cards"
      
-    image1="wedding-293.jpg" size1="two-thirds"
-    image2="name_card.jpg" size2="one-third"
+    image1="wedding-293.jpg" size1="two-thirds" title1="Name Card"
+    image2="name_card.jpg" size2="one-third" title2="Inside of the Name Card: Postcard and Magnet"
 %}
 
 ### Ceremony’s look and style
@@ -94,14 +96,14 @@ Afterwards, the paper planes were thrown at newlyweds by the quests while 'Fly m
     gallery="ceremony-look"
      
     image1="wedding-349.jpg" size1="one-quarter"
-    image2="wedding-358.jpg" size2="half"
-    image3="wedding-362_edited.jpg" size3="one-quarter"
+    image2="wedding-358.jpg" size2="half" title2="Bride and Groom running after the Last Call announcement"
+    image3="wedding-362_edited.jpg" size3="one-quarter" title3="This flight has No Exit"
 %}
 {% include image_row.html
     gallery="ceremony-look"
      
-    image1="wedding-394.jpg" size1="half"
-    image2="wedding-358.jpg" size2="half"
+    image1="wedding-394.jpg" size1="half" title1="Putting on the life vests"
+    image2="wedding-401.jpg" size2="half" title2="Fly me to the Moon"
 %}
 
 Two signposts with all the places where the guests come from, with the time of how long it takes to get there by foot or, when it takes too long, by plane. 
@@ -124,18 +126,18 @@ And even the prizes - certificates in the shape of a plane ticket were all part 
 {% include image_row.html
     gallery="traditions"
      
-    image1="wedding-505.jpg" size1="one-quarter"
-    image2="wedding-536.jpg" size2="one-quarter"
-    image3="wedding-668.jpg" size3="one-quarter"
-    image4="wedding-763.jpg" size4="one-quarter"
+    image1="wedding-505.jpg" size1="one-quarter" title1="Russian bread and Salt tradition"
+    image2="wedding-536.jpg" size2="one-quarter" title2="International Tradition"
+    image3="wedding-668.jpg" size3="one-quarter" title3="Songs in Different Languages competition"
+    image4="wedding-763.jpg" size4="one-quarter" title4="Latvian Tradition"
 %}
 {% include image_row.html
     gallery="traditions"
      
-    image1="wedding-731.jpg" size1="one-quarter"
-    image2="wedding-807.jpg" size2="one-quarter"
+    image1="wedding-731.jpg" size1="one-quarter" title1="Latvian Tradition"
+    image2="wedding-807.jpg" size2="one-quarter" title2="Jewish Tradition"
     image3="wedding-571.jpg" size3="one-quarter"
-    image4="wedding-745.jpg" size4="one-quarter"
+    image4="wedding-745.jpg" size4="one-quarter" title4="Latvian Tradition"
 %}
 
 ### Wedding cake in a shape of a Boarding pass
@@ -146,7 +148,7 @@ And even the prizes - certificates in the shape of a plane ticket were all part 
     image1="wedding-790.jpg" size1="full"
 %}
 
-### Wedding album, bucket list, decor details
+### Wedding album and other decor details
 
 {% include image_row.html
     gallery="ceremony-look"

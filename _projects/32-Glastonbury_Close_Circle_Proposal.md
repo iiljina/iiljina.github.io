@@ -23,7 +23,7 @@ We developed and proposed a concept of a living room concert, inviting the audie
 I massively enjoyed developing Close Circle concept while working on the production plan and details, social media plan and event evaluation, 
 ticket management and attendee management plans, interaction with the artist. I have also created a Production Schedule (or timeline) and a Function sheet.
 
-Feel free to have a look at [the proposal][proposal_pdf] to see all the exciting details of the Close Circle event.
+Feel free to have a look at [The Proposal][proposal_pdf] to see all the exciting details of the Close Circle event.
 
 ### Process and Learning Points
 
