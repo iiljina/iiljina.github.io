@@ -25,7 +25,7 @@ I have proposed to divide the venue into several areas - each area respresenting
 I presented my event's concept and the main event attributes in the short enthusiastic video pitch.
 
 {% capture video %}
-<video controls width="100%"><source src="/static/projects/16th_Birthday_party/pitch_video.mp4" type="video/mp4"></video>
+<video controls width="100%" preload="none" poster="/static/projects/16th_Birthday_party/video_preview.png"><source src="/static/projects/16th_Birthday_party/pitch_video.mp4" type="video/mp4"></video>
 {% endcapture %}
 {% capture video_note %}
 **Video Pitch**
@@ -67,7 +67,7 @@ Feel free to watch the recording of my pitch for this event proposal (above) and
 
 {% include image_row.html
     image1="pitch2.png" size1="half"
-    image2="pitch screenshot - journey.png" size2="half"
+    image2="pitch_screenshot_journey.png" size2="half"
 %}
 <!--(add last photo from Slides)--> 
 
