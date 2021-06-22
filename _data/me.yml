@@ -8,7 +8,7 @@ hello_text: >-
 
 preview:
   title: Inna Iljina - Portfolio
-  description: My events, event proposals, testimonials, other work experiences and hobbies all in one place.
+  description: Most interesting details of my events and event proposals, testimonials, my other work experiences and what I learned from them, as well as my hobbies and mission all in one place.
   url: 'https://iiljina.github.io/'
   image:
     url: '/images/preview.jpg'
