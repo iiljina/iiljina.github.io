@@ -6,3 +6,14 @@ mailtje: "'i'+'n'+'n'+'a'+'i'+'l'+'j'+'i'+'n'+'a'+'4'+'@'+'g'+'m'+'a'+'i'+'l'+'.
 hello_text: >-
   I am happy you came to learn more about the events I organised, proposals developed, my experiences, skills, hobbies,
   and testimonials.
+
+preview:
+  title: Inna Iljina - Portfolio
+  description: My events, event proposals, testimonials, other work experiences and hobbies all in one place.
+  url: 'https://iiljina.github.io/'
+  image:
+    url: '/images/preview.jpg'
+  type: profile
+  twitter:
+    card: summary_large_image
+    alt: Immersive experience that amaze, inspire and unite
