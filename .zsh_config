@@ -1,0 +1,11 @@
+alias to_portfolio_folder="cd $PWD"
+
+alias clean_portfolio="to_portfolio_folder && git reset --hard HEAD && git checkout master && git pull"
+
+alias portfolio="to_portfolio_folder && jekyll server --livereload"
+
+alias save_changes='to_portfolio_folder && git add . && git commit -m "Add something new"'
+
+alias deploy_portfolio="to_portfolio_folder && git checkout master && git rebase new-feature && git branch -D new-feature && git push"
+
+alias new_project="to_portfolio_folder && git checkout -b new-feature && cp -rf ./templates/new_project/* ."
