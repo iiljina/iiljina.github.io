@@ -1,5 +1,6 @@
 ---
 name: glastonbury
+col: 3
 title: Glastonbury, Close Circle - Proposal
 list_title: Glastonbury, Close Circle - Proposal
 gist: February - May 2020

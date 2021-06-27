@@ -1,5 +1,6 @@
 ---
 name: bday
+col: 1
 title: 16th Birthday Party - Proposal
 list_title: 16th Birthday Party - Proposal
 gist: October - December 2019

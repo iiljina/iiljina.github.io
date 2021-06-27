@@ -14,15 +14,10 @@ page_name: main
 {% capture content %}
 <div class="row projects">
     {% assign num_cols = 3 %}
-    {% assign num_cols_float = num_cols | times: 1.0 %}
-
-    {% assign totalProjects = site.projects.size %}
-    {% assign items_per_col = totalProjects | divided_by: num_cols_float | ceil %}
-
     {% for i in (1..num_cols) %}
     <div class="col-4 col-12-small">
-        {% assign offset = i | minus: 1 | times: items_per_col %}
-        {% for project in site.projects limit: items_per_col offset: offset %}
+        {% assign current_col_projects = site.projects | where: "col", i %}
+        {% for project in current_col_projects %}
         <article class="item">
             <a href="{{ project.url }}" class="image fit">
                 <img src="{{project.folder}}/{{ project.image }}" alt="{{ project.title }}"/>
