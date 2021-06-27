@@ -1,5 +1,6 @@
 ---
 name: wedding
+col: 2
 title: Travel-Themed Wedding
 list_title: Travel-Themed Wedding
 gist: Riga, Latvia - August 2019
