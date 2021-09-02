@@ -1,5 +1,6 @@
 ---
 name: intsoc
+type: event
 col: 3
 title: International Student Society's Events
 list_title: Meetings, Events, Socials and Trips

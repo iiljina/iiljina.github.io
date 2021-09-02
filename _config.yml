@@ -1,5 +1,9 @@
 collections:
-  projects:
+  events:
+    output: true
+    permalink: /:collection/:name
+
+  proposals:
     output: true
     permalink: /:collection/:name
 

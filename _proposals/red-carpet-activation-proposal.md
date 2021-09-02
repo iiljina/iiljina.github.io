@@ -1,6 +1,6 @@
 ---
 name: red-carpet-activation
-col: 1
+col: 2
 title: Red Carpet Activation - Proposal 
 list_title: Red Carpet Activation - Proposal 
 gist: EE brings you closer to the action

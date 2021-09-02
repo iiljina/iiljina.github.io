@@ -1,6 +1,7 @@
 ---
 name: blablacafe
-col: 2
+type: event
+col: 1
 title: Bla Bla Language Cafe
 list_title: Bla Bla Language Cafe
 gist: Amsterdam, August - October 2020
