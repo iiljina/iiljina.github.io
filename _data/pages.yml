@@ -4,7 +4,7 @@ main:
       name: 'top'
       title: 'Hello!'
       gist: >-
-        I create immersive experiences that amaze, inspire and unite.
+        ### I create immersive experiences that amaze, inspire and unite.
     events:
 #      backwards-compatibility with older CVs that have links to #projects, not #events
       name: 'projects'
