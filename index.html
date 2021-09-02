@@ -12,18 +12,18 @@ page_name: main
 {% include section.html major=true section=sections.top content=content %}
 
 {% capture content %}
-<div class="row projects">
+<div class="row events">
     {% assign num_cols = 3 %}
     {% for i in (1..num_cols) %}
     <div class="col-4 col-12-small">
-        {% assign current_col_projects = site.projects | where: "col", i %}
-        {% for project in current_col_projects %}
+        {% assign current_col_events = site.events | where: "col", i %}
+        {% for event in current_col_events %}
         <article class="item">
-            <a href="{{ project.url }}" class="image fit">
-                <img src="{{project.folder}}/{{ project.image }}" alt="{{ project.title }}"/>
+            <a href="{{ event.url }}" class="image fit">
+                <img src="{{event.folder}}/{{ event.image }}" alt="{{ event.title }}"/>
 
                 <div class="inner">
-                    <h5>{{ project.list_title }}</h5>
+                    <h5>{{ event.list_title }}</h5>
                 </div>
             </a>
         </article>
@@ -32,7 +32,30 @@ page_name: main
     {% endfor %}
 </div>
 {% endcapture %}
-{% include section.html section=sections.projects content=content %}
+{% include section.html section=sections.events content=content %}
+
+{% capture content %}
+<div class="row proposals">
+    {% assign num_cols = 3 %}
+    {% for i in (1..num_cols) %}
+    <div class="col-4 col-12-small">
+        {% assign current_col_proposals = site.proposals | where: "col", i %}
+        {% for proposal in current_col_proposals %}
+        <article class="item">
+            <a href="{{ proposal.url }}" class="image fit">
+                <img src="{{proposal.folder}}/{{ proposal.image }}" alt="{{ proposal.title }}"/>
+
+                <div class="inner">
+                    <h5>{{ proposal.list_title }}</h5>
+                </div>
+            </a>
+        </article>
+        {% endfor %}
+    </div>
+    {% endfor %}
+</div>
+{% endcapture %}
+{% include section.html section=sections.proposals content=content %}
 
 {% capture content %}
 <div class="row jobs">

@@ -5,15 +5,22 @@ main:
       title: 'Hello!'
       gist: >-
         I create immersive experiences that amaze, inspire and unite.
-    projects:
+    events:
+#      backwards-compatibility with older CVs that have links to #projects, not #events
       name: 'projects'
-      title: 'Events and Proposals'
-      menu_title: 'Events and Proposals'
-      icon: fa-th
+      title: 'Events'
+      menu_title: 'Events'
+      icon: fa-glass-cheers
       gist: >-
-        I put all my heart and efforts into every event and proposal (study projects) I do, and am fully committed to deliver the best possible result.<br/>
+        I put all my heart and efforts into all events and [proposals](#proposals) I do, and am fully committed to deliver the best possible result.<br/>
         I enjoy developing an overarching event concept, where every detail complements the theme and increases attendees' enjoyment of the event.<br/>
-        I align every detail to the big picture and the event’s goals and make sure the events are seamless and memorable.
+        I align every detail to the big picture and the event’s goals and make sure the experience is seamless and memorable.
+    proposals:
+      name: 'proposals'
+      title: 'Proposals'
+      menu_title: 'Proposals'
+      icon: fa-lightbulb
+      gist:
     work:
       name: 'work'
       title: 'Other Work Experiences'

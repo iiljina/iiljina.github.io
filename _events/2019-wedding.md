@@ -1,5 +1,6 @@
 ---
 name: wedding
+type: event
 col: 2
 title: Travel-Themed Wedding
 list_title: Travel-Themed Wedding
