@@ -18,7 +18,12 @@ collections:
 defaults:
   - scope:
       path: ""
-      type: "projects"
+      type: "events"
+    values:
+      layout: "project"
+  - scope:
+      path: ""
+      type: "proposals"
     values:
       layout: "project"
   - scope:

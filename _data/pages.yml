@@ -3,8 +3,7 @@ main:
     top:
       name: 'top'
       title: 'Hello!'
-      gist: >-
-        ### I create immersive experiences that amaze, inspire and unite.
+      gist: I create immersive experiences that amaze, inspire and unite.
     events:
 #      backwards-compatibility with older CVs that have links to #projects, not #events
       name: 'projects'
@@ -12,7 +11,7 @@ main:
       menu_title: 'Events'
       icon: fa-glass-cheers
       gist: >-
-        I put all my heart and efforts into all events and [proposals](#proposals) I do, and am fully committed to deliver the best possible result.<br/>
+        I put all my heart and efforts into all events and proposals I do, and am fully committed to deliver the best possible result.<br/>
         I enjoy developing an overarching event concept, where every detail complements the theme and increases attendees' enjoyment of the event.<br/>
         I align every detail to the big picture and the event’s goals and make sure the experience is seamless and memorable.
     proposals:
