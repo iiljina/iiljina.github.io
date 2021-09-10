@@ -1,3 +1,5 @@
+baseurl: "/"
+
 collections:
   events:
     output: true

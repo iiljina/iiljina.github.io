@@ -1,0 +1,12 @@
+---
+---
+<script>
+if (window.location.href.lastIndexOf('%23') != -1) {
+  window.location.href = window.location.href.replace('%23', '#');
+} else {
+  window.location.href = '{{ site.baseurl }}';
+}
+</script>
+<noscript>
+  <meta http-equiv="refresh" content="0;url={{ site.baseurl }}">
+</noscript>
