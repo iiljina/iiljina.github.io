@@ -68,7 +68,7 @@ I produced this event entirely individually from A to Z. I did everything from i
 
 > Thanks for such a great tour :) I can't wait for future tours
 
-Feel free to check the [Leave Behind][leave_behind] for all the event details.
+Feel free to check the [Leave Behind (PDF)][leave_behind] for all the event details.
 Or [walk the snowy Peter and Paul's fortress][youtube_video] with Yana and hear the exciting stories.
 <br/>_Please note: polls are not available in the recording._
 
