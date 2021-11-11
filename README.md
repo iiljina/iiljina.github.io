@@ -93,6 +93,9 @@ All the way to `col-12` which is an equivalent of `full`.
 #### Decide you position
 It can be `left` or `right` at this moment, and only for a single image.
 
+#### Add links
+Just add a link text in [square brackets](https://github.com/iiljina/iiljina.github.io) with URL in normal brackets to create an external link or a link to your [own website](/relative/link).
+
 ## Credits
 
 Thanks to AJ <aj@lkn.io | @ajlkn> for a template _Read Only_ by [HTML5 UP](https://html5up.net) provided under [CCA 3.0 license](https://html5up.net/license).
