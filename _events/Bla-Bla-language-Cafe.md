@@ -29,8 +29,9 @@ So almost every week and when the government measures allow, old and new expats 
     image1="bla_bla2.jpg" size1="half"
     image2="bla_bla_4.jpg" size2="half"
 %}
+title="September 2020"
 
 {% include image_row.html 
     image1="Bla_Bla5.jpg" size1="full"
     %}
-    
+title="October 2021"
